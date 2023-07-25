@@ -3,7 +3,7 @@ import "./style.css";
 
 function SectionTitle() {
   return (
-    <div className="header">
+    <div className="sectionTitle">
       <h3>Formación / Experiencia / Skills / Contacto</h3>
     </div>
   );

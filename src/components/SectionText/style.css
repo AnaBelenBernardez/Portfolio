@@ -1,0 +1,8 @@
+.sectionText {
+  display: inline-block;
+  border-radius: 35px;
+  width: 500px;
+  height: 140px;
+  background-color: #fdf7f7;
+  box-shadow: 10px 10px 0 0 #182739, 0 0 0 5px #182739;
+}

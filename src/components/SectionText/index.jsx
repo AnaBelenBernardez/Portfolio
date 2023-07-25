@@ -3,7 +3,7 @@ import "./style.css";
 
 function SectionText() {
   return (
-    <div className="header">
+    <div className="sectionText">
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur
         esse expedita iste minus in porro numquam molestias aspernatur atque.

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import Bio from "./components/Bio";
 import Contact from "./components/Contact";
@@ -16,17 +15,17 @@ function App() {
   return (
     <div className="app">
       <>
-        <Bio />
-        <Contact />
-        <Footer />
         <Header />
-        <Loading />
-        <Photo />
         <Position />
-        <SectionText />
+        <Photo />
+        <Bio />
         <SectionTitle />
+        <SectionText />
         <Spark />
         <Star />
+        <Contact />
+        {/* <Loading /> */}
+        <Footer />
       </>
     </div>
   );
