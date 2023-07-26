@@ -1,15 +1,7 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import "./style.css";
-
-const Footer = () => {
-  return (
-    <footer>
-      <div>
-        <p>Hecho por Ana</p>
-      </div>
-    </footer>
-  );
-};
+function Footer() {
+  return <div className="footer">Made With ❤️ By ThantZinPhyo</div>;
+}
 
 export default Footer;
