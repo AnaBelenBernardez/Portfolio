@@ -5,7 +5,7 @@
   /* border: 1px solid red; */
 }
 
-.app {
+body {
   background-color: #efe2db;
   background-size: 40px 40px;
   background-image: linear-gradient(to right, #fdf7f7 2px, transparent 1px),

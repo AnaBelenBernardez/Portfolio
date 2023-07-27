@@ -1,11 +1,7 @@
 export const SkillsData = [
   {
-    type: "Web-Development",
+    type: "Skills",
     list: [
-      {
-        name: "ReactJS",
-        icon: <i class="devicon-react-original colored"></i>,
-      },
       {
         name: "HTML5",
         icon: <i class="devicon-html5-plain colored"></i>,
@@ -19,33 +15,65 @@ export const SkillsData = [
         icon: <i class="devicon-javascript-plain colored"></i>,
       },
       {
-        name: "Tailwind",
-        icon: <i class="devicon-tailwindcss-plain colored"></i>,
+        name: "ReactJS",
+        icon: <i class="devicon-react-original-wordmark colored"></i>,
+      },
+      {
+        name: "MySQL",
+        icon: <i class="devicon-mysql-plain-wordmark colored"></i>,
+      },
+      {
+        name: "MySQL",
+        icon: <i class="devicon-nodejs-plain-wordmark colored"></i>,
       },
     ],
   },
   {
-    type: "Cloud & Linux",
+    type: "Others",
     list: [
       {
-        name: "Azure",
-        icon: <i class="devicon-azure-plain colored"></i>,
+        name: "VSC",
+        icon: <i class="devicon-vscode-plain-wordmark colored"></i>,
       },
       {
-        name: "Docker",
-        icon: <i class="devicon-docker-plain colored"></i>,
+        name: "Postman",
+        icon: <i class="devicon-vscode-plain-wordmark colored"></i>,
+      },
+      {
+        name: "Scrum",
+        icon: <i class="devicon-vscode-plain-wordmark colored"></i>,
       },
       {
         name: "Git",
-        icon: <i class="devicon-git-plain colored"></i>,
+        icon: <i class="devicon-git-plain-wordmark colored"></i>,
       },
       {
-        name: "Ubuntu",
-        icon: <i class="devicon-ubuntu-plain colored"></i>,
+        name: "GitHub",
+        icon: <i class="devicon-github-original-wordmark colored"></i>,
       },
       {
-        name: "Bash",
-        icon: <i class="devicon-bash-plain colored"></i>,
+        name: "GitLab",
+        icon: <i class="devicon-gitlab-plain-wordmark colored"></i>,
+      },
+      {
+        name: "npm",
+        icon: <i class="devicon-npm-original-wordmark colored"></i>,
+      },
+      {
+        name: "Photoshop",
+        icon: <i class="devicon-photoshop-plain colored"></i>,
+      },
+      {
+        name: "Slack",
+        icon: <i class="devicon-slack-plain-wordmark colored"></i>,
+      },
+      {
+        name: "Trello",
+        icon: <i class="devicon-trello-plain-wordmark colored"></i>,
+      },
+      {
+        name: "Canva",
+        icon: <i class="devicon-canva-original colored"></i>,
       },
     ],
   },

@@ -1,21 +1,25 @@
 import React from "react";
 import "./style.css";
-import Bio from "./Bio/index";
-import Projects from "./projects/index";
-import Skills from "./skills/index";
-import Contact from "./contact/index";
+import About from "./About/";
+import Projects from "./Projects";
+import Skills from "./Skills";
+import Contact from "./Contact";
+import Front from "./Front";
 
-function Body() {
+function Main() {
   return (
     <div className="body">
-      <section id="about">
-        <Bio />
+      <section id="front">
+        <Front />
       </section>
-      <section id="projects">
-        <Projects />
+      <section id="about">
+        <About />
       </section>
       <section id="skills">
         <Skills />
+      </section>
+      <section id="projects">
+        <Projects />
       </section>
       <section id="contact">
         <Contact />
@@ -24,4 +28,4 @@ function Body() {
   );
 }
 
-export default Body;
+export default Main;

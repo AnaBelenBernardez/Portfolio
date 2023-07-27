@@ -1,5 +1,6 @@
 import React from "react";
-import "./project-card.css";
+import "./style.css";
+
 function ProjectCard({ project }) {
   return (
     <div className="project-card">
@@ -22,11 +23,6 @@ function ProjectCard({ project }) {
           )}
         </div>
         <p>{project.about}</p>
-        <div className="project-tags">
-          {project.tags.map((tag) => {
-            return <label className="tag">{tag}</label>;
-          })}
-        </div>
       </div>
       <img src={project.image} className="project-photo" />
     </div>

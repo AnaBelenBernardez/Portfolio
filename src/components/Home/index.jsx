@@ -3,19 +3,15 @@ import "./style.css";
 import Header from "../Header/index";
 import Main from "../Main/index";
 import Footer from "../Footer/index";
+import ScrollToTop from "../../details/ScrollToTop";
 
 function Home() {
   return (
     <div className="home">
-      <div>
-        <Header />
-      </div>
-      <div>
-        <Main />
-      </div>
-      <div>
-        <Footer />
-      </div>
+      <Header />
+      <Main />
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 }
