@@ -11,18 +11,16 @@ function Skills() {
       <Separator />
       <label className="section-title">Skills</label>
       <div className="skills-container">
-        {data.map((item) => {
-          return (
-            <div className="skills-section">
-              <label className="skills-section-title">{item.type}</label>
-              <div className="skills-list">
-                {item.list.map((skill) => {
-                  return <SkillCard skill={skill} />;
-                })}
-              </div>
+        {data.map((item, index) => (
+          <div className="skills-section" key={index}>
+            <label className="skills-section-title">{item.type}</label>
+            <div className="skills-list">
+              {item.list.map((skill, skillIndex) => (
+                <SkillCard key={skillIndex} skill={skill} />
+              ))}
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
     </div>
   );

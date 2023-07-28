@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+
 function SkillCard({ skill }) {
   return (
     <div className="skill-card">

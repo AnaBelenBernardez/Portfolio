@@ -8,7 +8,7 @@ import Front from "./Front";
 
 function Main() {
   return (
-    <div className="body">
+    <div className="main">
       <section id="front">
         <Front />
       </section>
