@@ -1,14 +1,13 @@
 import React from "react";
-import Separator from "../../../details/separator/index";
 import "./style.css";
 import { SkillsData } from "../../data/skills";
 import SkillCard from "./Skillcard";
 
 function Skills() {
   const data = SkillsData;
+
   return (
     <div className="skills">
-      <Separator />
       <label className="section-title">Skills</label>
       <div className="skills-container">
         {data.map((item, index) => (

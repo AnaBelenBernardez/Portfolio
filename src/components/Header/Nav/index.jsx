@@ -10,6 +10,7 @@ function Nav() {
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
       <a href="CVs\ESP_CV_AnaBelen_Bernardez_Martinez.pdf" download>
+        <img className="download" src="/assets/download.svg" />
         Download CV
       </a>
     </section>

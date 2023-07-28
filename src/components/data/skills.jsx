@@ -23,7 +23,7 @@ export const SkillsData = [
         icon: <i className="devicon-mysql-plain-wordmark colored"></i>,
       },
       {
-        name: "MySQL",
+        name: "NodeJS",
         icon: <i className="devicon-nodejs-plain-wordmark colored"></i>,
       },
     ],
@@ -33,15 +33,15 @@ export const SkillsData = [
     list: [
       {
         name: "VSC",
-        icon: <i className="devicon-vscode-plain-wordmark colored"></i>,
+        icon: <i class="devicon-vscode-plain colored"></i>,
       },
       {
         name: "Postman",
-        icon: <i className="devicon-vscode-plain-wordmark colored"></i>,
+        icon: <img src="/assets/postman-icon.svg" />,
       },
       {
         name: "Scrum",
-        icon: <i className="devicon-vscode-plain-wordmark colored"></i>,
+        icon: <img src="\assets\scrum-svgrepo-com.svg" />,
       },
       {
         name: "Git",

@@ -1,26 +1,28 @@
 export const ProjectData = [
   {
-    title: "Drum Set with JS",
-    about: "lorem ipsum",
-    demo: "https://anabelenbernardez.github.io/BateriaJS/",
+    title: "Badum - Tss",
+    about:
+      "Game that allows using the mouse or the keyboard to simulate the sounds of a drum set.",
+    demo: "https://badum-tss.vercel.app/",
     github: "https://github.com/AnaBelenBernardez/BateriaJS",
     image:
-      "https://github.com/ThantZinPhyo-Slark/Application-Web-Design/raw/main/home.png",
+      "https://raw.githubusercontent.com/anabelenbernardez/BateriaJS/main/extras/imagen2.png",
   },
   {
     title: "SkillVerse",
-    about: "lorem ipsum",
+    about:
+      "Web where people who need a digital service can ask other users for help. For example: translate a text, edit a photo, review a document, etc. Only needs that can be made through a digital file.",
     demo: "-",
     github: "https://github.com/AnaBelenBernardez/SkillVerse",
     image:
-      "https://github.com/ThantZinPhyo-Slark/Google-IT-Support-Professional/raw/main/Certificate.jpg",
+      "https://raw.githubusercontent.com/anabelenbernardez/BateriaJS/main/extras/imagen2.png",
   },
   {
     title: "Portfolio",
-    about: "lorem ipsum",
+    about: "Of course, this portfolio.",
     demo: "https://anabelen-portfolio.vercel.app/",
     github: "https://github.com/AnaBelenBernardez/Portfolio",
     image:
-      "https://github.com/ThantZinPhyo-Slark/always-illest/raw/main/preview.png",
+      "https://raw.githubusercontent.com/anabelenbernardez/BateriaJS/main/extras/imagen2.png",
   },
 ];

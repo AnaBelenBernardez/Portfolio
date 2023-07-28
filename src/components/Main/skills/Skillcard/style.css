@@ -1,0 +1,13 @@
+/* style.css - SkillCard */
+.skill-card {
+  display: inline-block;
+  width: 20%; /* Distribuir en 5 columnas (100% / 5) */
+  text-align: center;
+  margin: 10px;
+}
+
+.skill-icon,
+.skill-icon > img {
+  font-size: 100px;
+  width: 100%;
+}
