@@ -1,3 +1,7 @@
 .front > h1 {
   font-family: Soria;
 }
+
+.front {
+  padding: 2rem;
+}
