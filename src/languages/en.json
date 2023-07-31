@@ -3,7 +3,7 @@
     "footer": "Made with ",
     "love": "love",
     "navFront": "FrontPage",
-    "navAbout": "About",
+    "navAbout": "About me",
     "navSkills": "Skills",
     "navProjects": "Projects",
     "navContact": "Contact",
@@ -17,6 +17,9 @@
     "position": "Full Stack Developer",
     "projectsSection": "Projects",
     "skillsSection": "Skills",
-    "othersSection": "Others"
+    "othersSection": "Others",
+    "project1About": "Game that allows using the mouse or the keyboard to simulate the sounds of a drum set.",
+    "project2About": "Web where people who need a digital service can ask other users for help. For example: translate a text, edit a photo, review a document, etc. Only needs that can be made through a digital file.",
+    "project3About": "Of course, this portfolio."
   }
 }

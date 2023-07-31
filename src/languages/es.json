@@ -1,6 +1,25 @@
 {
   "translation": {
     "footer": "Hecho con ",
-    "love": "cariño"
+    "love": "cariño",
+    "navFront": "FrontPage",
+    "navAbout": "Sobre mi",
+    "navSkills": "Habilidades",
+    "navProjects": "Proyectos",
+    "navContact": "Contacto",
+    "navCV": "Descargar CV",
+    "langButtonEN": "Inglés",
+    "langButtonES": "Español",
+    "langButtonGZ": "Gallego",
+    "about": "Apasionada del arte en todas sus formas: Desde pintura, arquitectura, música hasta videojuegos y diseño gráfico. Estoy enfocada en desarrollar mis habilidades de programación web. Mi objetivo es crear experiencias web atractivas y emocionantes que sean cautivadoras, diversas y accesibles. Durante mi formación y experiencia profesional he desarrollado mi capacidad de trabajo en equipo. Soy una persona trabajadora con iniciativa e implicación en los objetivos a alcanzar, resolutiva y comunicativa tanto en el trato con los compañeros como en la atención al cliente. Soy meticulosa en mi trabajo y muy organizada.",
+    "contact": "Me encantaría contarte más sobre mi.",
+    "contactMe": "¡Contáctame!",
+    "position": "Desarrolladora Full Stack",
+    "projectsSection": "Proyectos",
+    "skillsSection": "Habilidades",
+    "othersSection": "Otras",
+    "project1About": "Juego que permite utilizar el ratón o el teclado para simular los sonidos de una batería.",
+    "project2About": "Web donde las personas que necesitan un servicio digital pueden pedir ayuda a otros usuarios. Por ejemplo: traducir un texto, editar una foto, revisar un documento, etc. Solo necesidades que se puedan realizar a través de un archivo digital.",
+    "project3About": "Por supuesto, este portfolio."
   }
 }

@@ -1,13 +1,16 @@
 import React from "react";
 import "./style.css";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const { t } = useTranslation();
+
   return (
     <div className="contact">
       <p>
-        I would love to tell you more about myself.{" "}
+        {t("translation.contact")}
         <a href="mailto:anabelenbernardez@gmail.com" title="e-mail">
-          Contact me!
+          {t("translation.contactMe")}
         </a>
       </p>
       <div className="socials">

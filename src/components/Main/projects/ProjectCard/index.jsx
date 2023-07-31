@@ -1,7 +1,11 @@
 import React from "react";
 import "./style.css";
+import { useTranslation } from "react-i18next";
 
 function ProjectCard({ project }) {
+  const { t } = useTranslation();
+  const aboutTranslationKey = `translation.project${project.index}About`;
+
   return (
     <div className="project-card">
       <div className="project-info">
@@ -22,7 +26,7 @@ function ProjectCard({ project }) {
             </a>
           )}
         </div>
-        <p>{project.about}</p>
+        <p>{t(aboutTranslationKey)}</p>
       </div>
       <img src={project.image} alt={project.title} className="project-photo" />
     </div>

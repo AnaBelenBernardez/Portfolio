@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 
 function LanguageSelector() {
-  const { i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const handleChangeLanguage = (language) => {
     i18n.changeLanguage(language);
@@ -11,9 +11,15 @@ function LanguageSelector() {
 
   return (
     <div>
-      <button onClick={() => handleChangeLanguage("en")}>English</button>
-      <button onClick={() => handleChangeLanguage("gz")}>Galego</button>
-      <button onClick={() => handleChangeLanguage("es")}>Español</button>
+      <button onClick={() => handleChangeLanguage("en")}>
+        {t("translation.langButtonEN")}
+      </button>
+      <button onClick={() => handleChangeLanguage("gz")}>
+        {t("translation.langButtonGZ")}
+      </button>
+      <button onClick={() => handleChangeLanguage("es")}>
+        {t("translation.langButtonES")}
+      </button>
     </div>
   );
 }

@@ -1,6 +1,25 @@
 {
   "translation": {
     "footer": "Feito con ",
-    "love": "agarimo"
+    "love": "agarimo",
+    "navFront": "FrontPage",
+    "navAbout": "Sobre min",
+    "navSkills": "Habilidades",
+    "navProjects": "Proxectos",
+    "navContact": "Contacto",
+    "navCV": "Descargar CV",
+    "langButtonEN": "Inglés",
+    "langButtonES": "Español",
+    "langButtonGZ": "Galego",
+    "about": "Apaixonada pola arte en todas as súas formas: dende pintura, arquitectura, música ata videoxogos e deseño gráfico. Estou centrada no desenvolvemento das miñas habilidades de programación web. O meu obxectivo é crear experiencias web atractivas e emocionantes que sexan engaiolantes, diversas e accesibles. Durante a miña formación e experiencia profesional desenvolvín a miña capacidade de traballo en equipo. Son unha persoa traballadora, con iniciativa e implicación nos obxectivos a acadar, resolutiva e comunicativa tanto no trato cos compañeiros como na atención ao cliente. Son meticulosa no meu traballo e moi organizada.",
+    "contact": "Encantaríame contarche máis sobre min.",
+    "contactMe": "Contáctame!",
+    "position": "Desenvolvedora Full Stack",
+    "projectsSection": "Proxectos",
+    "skillsSection": "Habilidades",
+    "othersSection": "Outras",
+    "project1About": "Xogo que permite usar o rato ou o teclado para simular os sons dunha batería.",
+    "project2About": "Web onde as persoas que necesiten un servizo dixital poden pedir axuda a outros usuarios. Por exemplo: traducir un texto, editar unha foto, revisar un documento, etc. Só necesidades que se poden facer a través dun arquivo dixital.",
+    "project3About": "Por suposto, este portfolio."
   }
 }
