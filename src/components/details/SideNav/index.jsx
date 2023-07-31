@@ -5,7 +5,7 @@ function SideNav() {
   return (
     <div className="side-navigator">
       <a href="https://github.com/AnaBelenBernardez" target="_blank">
-        <i class="devicon-github-original"></i>
+        <i className="devicon-github-original"></i>
       </a>
       <a target="blank" href="https://www.linkedin.com/in/anabelenbernardez/">
         <i className="devicon-linkedin-plain"></i>

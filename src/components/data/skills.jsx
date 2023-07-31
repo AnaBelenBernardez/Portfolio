@@ -33,7 +33,7 @@ export const SkillsData = [
     list: [
       {
         name: "VSC",
-        icon: <i class="devicon-vscode-plain colored"></i>,
+        icon: <i className="devicon-vscode-plain colored"></i>,
       },
       {
         name: "Postman",
