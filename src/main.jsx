@@ -1,28 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import "./index.css";
 import { I18nextProvider } from "react-i18next";
 import i18n from "i18next";
 
-// Importa y configura tus traducciones aquí
+import enTranslation from "./languages/en.json";
+import esTranslation from "./languages/es.json";
+import gzTranslation from "./languages/gz.json";
+
 const resources = {
   en: {
-    translation: {
-      greeting: "Hello!",
-      content: "This is the content in English.",
-    },
+    translation: enTranslation,
   },
   es: {
-    translation: {
-      greeting: "¡Hola!",
-      content: "Este es el contenido en español.",
-    },
+    translation: esTranslation,
   },
   gz: {
-    translation: {
-      greeting: "Ola!",
-      content: "Este é o contido en galego.",
-    },
+    translation: gzTranslation,
   },
 };
 
