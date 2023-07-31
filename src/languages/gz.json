@@ -1,7 +1,6 @@
 {
   "translation": {
-    "greeting": "Ola!",
-    "content": "Este é o contido en galego.",
-    "footerText": "Feito con 💜"
+    "footer": "Feito con ",
+    "love": "agarimo"
   }
 }

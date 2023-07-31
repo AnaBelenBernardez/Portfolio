@@ -29,6 +29,7 @@ function ScrollToTop() {
 
   return (
     <button
+      title="⬆"
       className={`scroll-to-top ${isVisible ? "show" : "hide"}`}
       onClick={scrollToTop}
     >

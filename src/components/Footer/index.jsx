@@ -5,7 +5,12 @@ import "./style.css";
 function Footer() {
   const { t } = useTranslation();
 
-  return <div className="footer">{t("translation.footerText")}</div>;
+  return (
+    <div className="footer">
+      {t("translation.footer")}
+      <span title={t("translation.love")}>💜</span>
+    </div>
+  );
 }
 
 export default Footer;
