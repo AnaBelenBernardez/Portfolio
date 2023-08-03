@@ -1,27 +1,37 @@
 .side-navigator {
   position: fixed;
-  top: 20%;
-  right: 20px;
+  top: 30%;
+  right: 0px;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: red;
+  background-color: #182739;
+  border-start-start-radius: 10px;
+  border-end-start-radius: 10px;
 }
 
 .side-navigator a {
   display: block;
-  margin-bottom: 20px;
+  margin: 10px;
   color: #fff;
-  font-size: 24px;
+  font-size: 40px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .side-navigator a:hover {
-  color: #f00;
+  color: #f69838;
 }
 
-.email {
-  width: 2rem;
+.svg-wrapper {
+  width: 40px;
+}
+
+.side-navigator svg:hover #id_101 {
+  fill: #f69838;
+}
+
+.side-navigator svg:hover #id_103 {
+  stroke: #f69838;
 }

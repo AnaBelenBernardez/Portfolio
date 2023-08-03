@@ -3,4 +3,16 @@
   top: 0;
   background-color: yellow;
   z-index: 99999;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: inline-block;
+  border-radius: 35px;
+  background-color: #fdf7f7;
+  border: 3px solid #182739;
+  font-family: Soria;
+  padding: 10px;
 }

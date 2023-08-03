@@ -10,7 +10,9 @@ function Nav() {
 
   return (
     <section id="nav">
-      <a href="#front">{t("translation.navFront")}</a>
+      <a href="#front" className="frontNav">
+        <img src="assets\stars\4.png" alt="Front Page" />
+      </a>
       <a href="#about"> {t("translation.navAbout")}</a>
       <a href="#skills"> {t("translation.navSkills")}</a>
       <a href="#projects"> {t("translation.navProjects")}</a>
