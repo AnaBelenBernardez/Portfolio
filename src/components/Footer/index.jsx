@@ -8,7 +8,7 @@ function Footer() {
   return (
     <div className="footer">
       {t("translation.footer")}
-      <span title={t("translation.love")}>💜</span>
+      <span title={t("translation.love")}>🧡</span>
     </div>
   );
 }

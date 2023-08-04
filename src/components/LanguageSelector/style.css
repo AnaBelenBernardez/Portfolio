@@ -1,0 +1,50 @@
+.languageSelector {
+  display: flex;
+  align-items: center;
+  position: relative;
+  float: right;
+  padding: 5px;
+}
+
+.language {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border: 2px solid #182739;
+  padding: 7px;
+  background-color: #fdf7f7;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  font-family: Soria;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #182739;
+}
+
+#eng {
+  border-right: 0;
+  border-radius: 6px 0 0 6px;
+}
+
+#esp {
+  border-left: 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.lang-flag {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.language.active {
+  background-color: #f69838;
+}
+
+.language:hover,
+.language:focus {
+  background-color: #f69838;
+  outline: none;
+}
