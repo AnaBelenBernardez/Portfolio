@@ -1,10 +1,58 @@
 .contact {
+  text-align: center;
   display: inline-block;
   border-radius: 35px;
-  width: 500px;
-  height: 140px;
+  width: 50rem;
+  height: 10rem;
   background-color: #fdf7f7;
   box-shadow: 10px 10px 0 0 #182739, 0 0 0 5px #182739;
+  padding: 1rem;
+  margin: 2rem;
 }
 
-/* el contactMe que tenga un hover y lleve a un mail:to */
+.socials {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2rem;
+}
+
+.socials > a {
+  color: #f69838;
+  transition: color 1s ease;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 40px;
+}
+
+.socials > a:hover {
+  color: #182739;
+  transition: color 0.5s ease;
+}
+
+.contact-info {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left; /* Alinear el contenido del contacto a la izquierda */
+}
+
+.contact > p {
+  color: #182739;
+  font-size: 20px;
+}
+
+.contact > a {
+  font-family: Soria;
+  font-size: 60px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 1s ease;
+  color: #f69838;
+  margin-left: 1rem;
+}
+
+.contact > a:hover {
+  font-size: 60px;
+  text-decoration: none;
+  color: #182739;
+  transition: color 0.5s ease;
+}

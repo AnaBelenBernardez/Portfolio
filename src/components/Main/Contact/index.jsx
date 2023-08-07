@@ -7,12 +7,7 @@ function Contact() {
 
   return (
     <div className="contact">
-      <p>
-        {t("translation.contact")}
-        <a href="mailto:anabelenbernardez@gmail.com" title="e-mail">
-          {t("translation.contactMe")}
-        </a>
-      </p>
+      <p>{t("translation.contact")}</p>
       <div className="socials">
         <a
           target="blank"
@@ -29,6 +24,9 @@ function Contact() {
           <i className="devicon-linkedin-plain"></i>
         </a>
       </div>
+      <a href="mailto:anabelenbernardez@gmail.com" title="Send e-mail to Ana">
+        {t("translation.contactMe")}
+      </a>
     </div>
   );
 }

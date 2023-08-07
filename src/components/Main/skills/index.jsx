@@ -10,7 +10,6 @@ function Skills() {
 
   return (
     <div className="skills">
-      <label className="section-title">{t("translation.skillsSection")}</label>
       <div className="skills-container">
         {data.map((item, index) => (
           <div className="skills-section" key={index}>

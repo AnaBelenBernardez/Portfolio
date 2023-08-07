@@ -5,6 +5,7 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/details/ScrollToTop";
 import SideNav from "./components/details/SideNav";
+import Contact from "./components/Main/Contact";
 
 function App() {
   return (

@@ -13,7 +13,7 @@ function Projects() {
       <label className="section-title">
         {t("translation.projectsSection")}
       </label>
-      <div>
+      <div className="projects-section">
         {data.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
