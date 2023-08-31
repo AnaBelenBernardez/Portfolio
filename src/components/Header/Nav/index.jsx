@@ -10,25 +10,40 @@ function Nav() {
   const cvFileName = `${currentLanguage.toUpperCase()}_CV_AnaBelen_Bernardez_Martinez.pdf`;
 
   return (
-    <nav id="nav" className="nav">
-      <a href="#front" className="frontNav">
-        <img src="assets\stars\4.png" alt="Front Page" />
-      </a>
-      <div className="nav-links">
-        <a href="#about">{t("translation.navAbout")}</a>
-        <a href="#skills">{t("translation.navSkills")}</a>
-        <a href="#projects">{t("translation.navProjects")}</a>
-        <a href="#contact">{t("translation.navContact")}</a>
-      </div>
-      <a href={`CVs/${cvFileName}`} download>
-        <img
-          className="download"
-          src="/assets/download.svg"
-          alt="Download CV"
-        />
-        {t("translation.navCV")}
-      </a>
-    </nav>
+    <div className="nav-container">
+      <nav className="navbar">
+        <ul className="nav-list">
+          <li>
+            <a href="#top" className="homeButton">
+              <img src="assets\stars\4.png" alt="Front Page" />
+            </a>
+          </li>
+          <div className="nav-links">
+            <li>
+              {" "}
+              <a href="#skills">{t("translation.navSkills")}</a>
+            </li>
+            <li>
+              <a href="#projects">{t("translation.navProjects")}</a>
+            </li>
+            <li>
+              <a href="#contact">{t("translation.navContact")}</a>
+            </li>
+          </div>
+          <li>
+            {" "}
+            <a href={`CVs/${cvFileName}`} download>
+              <img
+                className="download"
+                src="/assets/download.svg"
+                alt="Download CV"
+              />
+              {t("translation.navCV")}
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 }
 

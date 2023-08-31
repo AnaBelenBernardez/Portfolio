@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import About from "./About/";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Contact from "./Contact";
@@ -11,9 +10,6 @@ function Main() {
     <div className="main">
       <section id="front">
         <Front />
-      </section>
-      <section id="about">
-        <About />
       </section>
       <section id="skills">
         <Skills />

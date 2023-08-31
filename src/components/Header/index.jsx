@@ -7,7 +7,9 @@ function Header() {
   return (
     <div className="sticky-header">
       <header className="header">
-        <Nav />
+        <div className="header-container">
+          <Nav />
+        </div>
         <LanguageSelector />
       </header>
     </div>

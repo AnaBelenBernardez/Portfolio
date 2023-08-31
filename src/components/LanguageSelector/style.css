@@ -2,8 +2,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  float: right;
-  padding: 5px;
 }
 
 .language {
