@@ -18,7 +18,7 @@ function LanguageSelector() {
         onClick={() => handleChangeLanguage("en")}
       >
         <img
-          src="assets\UK_flag.svg"
+          src="./../../assets/UK_flag.svg"
           alt="English flag"
           className="lang-flag"
         />
@@ -30,7 +30,7 @@ function LanguageSelector() {
         onClick={() => handleChangeLanguage("gz")}
       >
         <img
-          src="assets\Galician_flag.svg"
+          src="./../../assets/Galician_flag.svg"
           alt="Galician flag"
           className="lang-flag"
         />
@@ -42,7 +42,7 @@ function LanguageSelector() {
         onClick={() => handleChangeLanguage("es")}
       >
         <img
-          src="assets\Spanish_flag.svg"
+          src="./../../assets/Spanish_flag.svg"
           alt="Spanish flag"
           className="lang-flag"
         />
