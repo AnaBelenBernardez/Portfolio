@@ -1,7 +1,7 @@
-// Nav.js
 import React from "react";
 import "./style.css";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const { t, i18n } = useTranslation();
@@ -14,20 +14,16 @@ function Nav() {
       <nav className="navbar">
         <ul className="nav-list">
           <li>
-            <a href="#top" className="homeButton">
-              <img src="assets\stars\4.png" alt="Front Page" />
+            <a href="/" className="homeButton">
+              Home
             </a>
           </li>
           <div className="nav-links">
             <li>
-              {" "}
-              <a href="#skills">{t("translation.navSkills")}</a>
+              <a href="/projects">{t("translation.navProjects")}</a>
             </li>
             <li>
-              <a href="#projects">{t("translation.navProjects")}</a>
-            </li>
-            <li>
-              <a href="#contact">{t("translation.navContact")}</a>
+              <Link to="/about">{t("translation.navAbout")}</Link>
             </li>
           </div>
           <li>

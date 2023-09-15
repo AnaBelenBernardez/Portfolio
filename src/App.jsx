@@ -1,20 +1,26 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Main from "./components/Main";
 import Footer from "./components/Footer";
-import ScrollToTop from "./components/details/ScrollToTop";
-import SideNav from "./components/details/SideNav";
-import Contact from "./components/Main/Contact";
+import SideNav from "./components/SideNav";
+import { Route, Routes } from "react-router-dom";
+import AboutPage from "./components/AboutPage";
+import HomePage from "./components/HomePage";
+import AllProjectsPage from "./components/AllProjectsPage";
+import ProjectPage from "./components/ProjectPage";
+import NotFoundPage from "./components/NotFoundPage";
 
 function App() {
   return (
     <div className="app">
-      <Header />
       <SideNav />
-      <Main />
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<AllProjectsPage />} />
+        <Route path="/project/:id" element={<ProjectPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
       <Footer />
-      <ScrollToTop />
     </div>
   );
 }

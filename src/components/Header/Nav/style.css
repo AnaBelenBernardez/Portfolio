@@ -32,10 +32,3 @@
   justify-content: space-between;
   text-decoration: none;
 }
-
-.homeButton > img {
-  width: 40px;
-  background-color: #f69838;
-  border-start-start-radius: 35px;
-  border-end-start-radius: 35px;
-}

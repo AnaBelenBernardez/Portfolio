@@ -7,7 +7,7 @@
   /* border: 1px solid red; */
 }
 
-body {
+/* body {
   --orange: #f69838;
   --orangish: #feb2a6;
   --shadow: #182739;
@@ -21,4 +21,4 @@ body {
   background-size: 40px 40px;
   background-image: linear-gradient(to right, #fdf7f7 2px, transparent 1px),
     linear-gradient(to bottom, #fdf7f7 2px, transparent 1px);
-}
+} */
