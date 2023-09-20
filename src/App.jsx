@@ -13,7 +13,7 @@ import Header from "./components/Header";
 function App() {
   return (
     <div className="app">
-      <SideNav />
+      {/* <SideNav /> */}
       <Header />
       <Routes>
         <Route exact path="/" element={<HomePage />} />

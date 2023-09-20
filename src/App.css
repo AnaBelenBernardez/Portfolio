@@ -1,20 +1,14 @@
-/* html {
-  scroll-behavior: smooth;
-}
 .app {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  margin: auto;
+  display: grid;
+  grid-template-rows: 5rem 1fr 4rem;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
-@media only screen and (max-width: 1024px) {
-  .app {
-    width: 90%;
-  }
+header {
+  grid-row: 1;
 }
-@media only screen and (max-width: 512px) {
-  .app {
-    width: 100%;
-  }
-} */
+
+footer {
+  grid-row: 3;
+}

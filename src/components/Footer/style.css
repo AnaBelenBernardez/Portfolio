@@ -1,14 +1,12 @@
 .footer {
-  padding: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
   font-family: Soria;
   letter-spacing: 2px;
   font-weight: bold;
 }
 
 .footer span {
-  margin-left: 0.5rem;
+  margin-left: 0.2rem;
 }

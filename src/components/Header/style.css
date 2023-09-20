@@ -1,4 +1,4 @@
-.sticky-header {
+.header {
   position: sticky;
   top: 1vh;
   z-index: 99999;
@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.header {
+.sticky-header {
   display: flex;
   justify-content: center;
   align-items: center;

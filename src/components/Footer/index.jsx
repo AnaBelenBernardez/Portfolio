@@ -6,10 +6,10 @@ function Footer() {
   const { t } = useTranslation();
 
   return (
-    <div className="footer">
+    <footer className="footer">
       {t("translation.footer")}
       <span title={t("translation.love")}>🧡</span>
-    </div>
+    </footer>
   );
 }
 

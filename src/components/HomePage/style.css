@@ -1,81 +1,12 @@
-/* .front > h1 {
-  font-family: Soria;
-}
-
-.front {
-  padding: 2rem;
-  margin-top: 3vh;
+.home {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.homepage-first-area-right-side {
-  display: flex;
-  align-items: center;
-}
-
-.homepage-image-container {
-  width: 370px;
-  height: 370px;
-}
-
-.homepage-image-wrapper img {
-  width: 100%;
-}
-
-.homepage-first-area-left-side {
+.photo-and-nav {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
-
-.homepage-title {
-  width: 85% !important;
-}
-
-.homepage-subtitle {
-  width: 85% !important;
-}
-
-@media (max-width: 1024px) {
-  .front {
-    flex-direction: column;
-  }
-
-  .homepage-first-area-left-side {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    order: 2;
-  }
-
-  .homepage-title {
-    width: 100% !important;
-    margin-top: 20px;
-    order: 2;
-  }
-
-  .homepage-subtitle {
-    width: 100% !important;
-    margin-top: 10px;
-    order: 3;
-  }
-
-  .homepage-first-area-right-side {
-    width: 100%;
-    order: 1;
-  }
-
-  .homepage-image-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-left: 10px;
-    order: 1;
-  }
-
-  .homepage-after-title {
-    flex-direction: column;
-  }
-} */

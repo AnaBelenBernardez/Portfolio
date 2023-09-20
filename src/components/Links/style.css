@@ -1,0 +1,34 @@
+.profile-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+  height: 4rem;
+  box-sizing: border-box;
+}
+
+.profile-links a {
+  display: block;
+  margin: 10px;
+  color: #182739;
+  font-size: 40px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.profile-links a:hover {
+  color: #006ef5;
+}
+
+.svg-email {
+  width: 40px;
+}
+
+.profile-links svg:hover #id_101 {
+  fill: #0073ff;
+}
+
+.profile-links svg:hover #id_103 {
+  stroke: #0073ff;
+}
