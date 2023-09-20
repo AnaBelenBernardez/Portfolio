@@ -2,13 +2,11 @@ import React from "react";
 import "./style.css";
 import { useTranslation } from "react-i18next";
 import Photo from "../Photo";
-import Header from "../Header";
 
 function HomePage() {
   const { t } = useTranslation();
   return (
     <div className="front">
-      <Header />
       <div className="homepage-first-area-left-side">
         <div className="title homepage-title">
           <h1>Ana Belén Bernárdez Martínez</h1>
