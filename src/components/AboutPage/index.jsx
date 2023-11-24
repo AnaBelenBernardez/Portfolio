@@ -7,13 +7,29 @@ function AboutPage() {
   const { t } = useTranslation();
 
   return (
-    <div className="about">
-      <main>
-        <p>{t("translation.about")}</p>
-        <div>FOTILLOS</div>
+    <main className="aboutMain">
+      {/* <div className="about">
+        <p className="textAbout">{t("translation.about")}</p>
+      </div> */}
+      <div className="photosAbout">
+        <div class="item">
+          <div class="polaroid">
+            <img src="\assets\team.jpeg" />
+            <div class="caption">Teamwork</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="polaroid">
+            <img src="\assets\yep_thats_me.jpg" />
+            <div class="caption">✌✌</div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="contact">
         <Contact />
-      </main>
-    </div>
+      </div> */}
+    </main>
   );
 }
 

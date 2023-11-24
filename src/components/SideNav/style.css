@@ -9,6 +9,7 @@
   background-color: #182739;
   border-start-start-radius: 10px;
   border-end-start-radius: 10px;
+  z-index: 9999;
 }
 
 .side-navigator a {

@@ -9,8 +9,8 @@ function AllProjectsPage() {
   return (
     <div className="all">
       <main>
-        <Skills />
-        {/* <Projects /> */}
+        {/* <Skills /> */}
+        <Projects />
         <SideNav />
         <ScrollToTop />
       </main>

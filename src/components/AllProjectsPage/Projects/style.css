@@ -1,13 +1,12 @@
-.projects {
+/* .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centra horizontalmente en PC */
-  gap: 2rem; /* Separación de 2rem entre elementos */
+  justify-content: center;
 }
 
 .project-card {
-  width: calc(33.33% - 2rem); /* Tamaño de la tarjeta con separación */
-  margin-bottom: 2rem; /* Separación de 2rem entre tarjetas */
+  width: calc(33.33% - 2rem);
+  margin-bottom: 2rem;
   position: relative;
   transition: transform 0.2s ease-in-out;
 }
@@ -17,9 +16,9 @@
 }
 
 .project-photo {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+  width: 400px;
+  height: 100%;
+  object-fit: contain;
 }
 
 .project-links {
@@ -51,19 +50,18 @@
   display: inline-block;
 }
 
-/* Estilos responsive */
 @media (max-width: 768px) {
   .projects {
-    justify-content: center; /* Centra horizontalmente en dispositivos más pequeños */
+    justify-content: center;
   }
 
   .project-card {
-    width: calc(50% - 2rem); /* Dos columnas en dispositivos más pequeños */
+    width: calc(50% - 2rem);
   }
 }
 
 @media (max-width: 480px) {
   .project-card {
-    width: 100%; /* Una columna en dispositivos móviles */
+    width: 100%;
   }
-}
+} */

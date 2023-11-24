@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Footer from "./components/Footer";
-import SideNav from "./components/SideNav";
 import { Route, Routes } from "react-router-dom";
 import AboutPage from "./components/AboutPage";
 import HomePage from "./components/HomePage";
@@ -13,7 +12,6 @@ import Header from "./components/Header";
 function App() {
   return (
     <div className="app">
-      {/* <SideNav /> */}
       <Header />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
