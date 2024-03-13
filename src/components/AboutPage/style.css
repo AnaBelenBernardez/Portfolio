@@ -1,9 +1,7 @@
 .aboutMain {
   display: grid;
-  /* grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  width: 80%; */
-  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
   align-items: center;
   justify-items: center;
 }
@@ -28,11 +26,11 @@
 }
 .polaroid > img {
   max-width: 100%;
-
   height: auto;
   width: calc(100% - 2rem);
   margin: 0 auto;
 }
+
 .caption {
   font-size: 1.5rem;
   margin-top: 0.5rem;
@@ -118,7 +116,16 @@
   transition: all 0.35s;
 }
 
-.contact {
+.contact-box {
   grid-column: 2;
-  border: red solid 2px;
+}
+
+.caption {
+  display: inline-block;
+}
+
+.mirror::after {
+  content: "✌";
+  display: inline-block;
+  transform: scaleX(-1);
 }

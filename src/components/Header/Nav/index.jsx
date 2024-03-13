@@ -18,23 +18,22 @@ function Nav() {
               Home
             </a>
           </li>
-          <div className="nav-links">
-            <li>
-              <a href="/projects">{t("translation.navProjects")}</a>
-            </li>
-            <li>
-              <Link to="/about">{t("translation.navAbout")}</Link>
-            </li>
-          </div>
+          <li>
+            <a href="/projects">{t("translation.navProjects")}</a>
+          </li>
+          <li>
+            <Link to="/about">{t("translation.navAbout")}</Link>
+          </li>
           <li>
             {" "}
             <a href={`CVs/${cvFileName}`} download>
+              {t("translation.navCV")}
               <img
                 className="download"
                 src="/assets/download.svg"
                 alt="Download CV"
+                style={{ width: "2rem" }}
               />
-              {t("translation.navCV")}
             </a>
           </li>
         </ul>

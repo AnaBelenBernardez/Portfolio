@@ -6,18 +6,18 @@
   box-sizing: border-box;
 }
 
-/* body {
+body {
   --orange: #f69838;
   --orangish: #feb2a6;
   --shadow: #182739;
   --shadowish: #33334f;
   --white: #fdf7f7;
   --green: #0f4e54;
-  --back: #efe2db;
+  --back: #f5dccf;
   font-family: "Montserrat", sans-serif;
 
-  background-color: #efe2db;
+  background-color: var(--back);
   background-size: 40px 40px;
   background-image: linear-gradient(to right, #fdf7f7 2px, transparent 1px),
     linear-gradient(to bottom, #fdf7f7 2px, transparent 1px);
-} */
+}

@@ -30,9 +30,17 @@
 }
 
 .side-navigator svg:hover #id_101 {
-  fill: #f69838;
+  transition: fill 0.3s ease;
 }
 
 .side-navigator svg:hover #id_103 {
-  stroke: #f69838;
+  transition: stroke 0.3s ease;
+}
+
+.side-navigator svg:hover #id_101 {
+  fill: var(--orange);
+}
+
+.side-navigator svg:hover #id_103 {
+  stroke: var(--orange);
 }

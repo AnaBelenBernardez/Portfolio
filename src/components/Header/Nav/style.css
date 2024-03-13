@@ -1,34 +1,26 @@
-.download {
-  width: 2rem;
-}
-
 .nav-container {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 50rem;
-}
-
-.navbar {
+  margin: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  width: 100%;
+  font-family: Soria;
 }
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   align-items: center;
 }
 
-.nav-links {
-  flex: 1;
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
+.nav-list > li > a {
   text-decoration: none;
+  color: var(--shadow);
+  margin-right: 8rem;
+  font-size: 1.5rem;
+}
+
+.download {
+  position: absolute;
+  margin-left: 1rem;
 }

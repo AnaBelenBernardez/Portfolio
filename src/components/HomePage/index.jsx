@@ -11,7 +11,6 @@ function HomePage() {
       <div className="profile">
         <h1>Ana Belén Bernárdez Martínez</h1>
         <h2>{t("translation.position")}</h2>
-        <p>Una frasecita</p>
       </div>
       <div className="photo-and-nav">
         <Photo />

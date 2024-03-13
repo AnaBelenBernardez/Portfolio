@@ -8,9 +8,9 @@ function AboutPage() {
 
   return (
     <main className="aboutMain">
-      {/* <div className="about">
+      <div className="about">
         <p className="textAbout">{t("translation.about")}</p>
-      </div> */}
+      </div>
       <div className="photosAbout">
         <div class="item">
           <div class="polaroid">
@@ -21,14 +21,14 @@ function AboutPage() {
         <div class="item">
           <div class="polaroid">
             <img src="\assets\yep_thats_me.jpg" />
-            <div class="caption">✌✌</div>
+            <div class="caption mirror">✌😁</div>
           </div>
         </div>
       </div>
 
-      {/* <div className="contact">
+      <div className="contact-box">
         <Contact />
-      </div> */}
+      </div>
     </main>
   );
 }

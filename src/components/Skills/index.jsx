@@ -7,29 +7,29 @@ import { useTranslation } from "react-i18next";
 function Skills() {
   const data = SkillsData;
   const { t } = useTranslation();
-  // const skillsContainerRef = useRef(null);
+  const skillsContainerRef = useRef(null);
 
-  // useEffect(() => {
-  //   const skillsContainer = skillsContainerRef.current;
-  //   let scrollPosition = 0;
+  useEffect(() => {
+    const skillsContainer = skillsContainerRef.current;
+    let scrollPosition = 0;
 
-  //   const scrollSkills = () => {
-  //     scrollPosition += 3;
-  //     skillsContainer.style.transform = `translateX(-${scrollPosition}px)`;
+    const scrollSkills = () => {
+      scrollPosition += 3;
+      skillsContainer.style.transform = `translateX(-${scrollPosition}px)`;
 
-  //     if (scrollPosition >= skillsContainer.scrollWidth) {
-  //       scrollPosition = 0;
-  //     }
+      if (scrollPosition >= skillsContainer.scrollWidth) {
+        scrollPosition = 0;
+      }
 
-  //     requestAnimationFrame(scrollSkills);
-  //   };
+      requestAnimationFrame(scrollSkills);
+    };
 
-  //   requestAnimationFrame(scrollSkills);
+    requestAnimationFrame(scrollSkills);
 
-  //   return () => {
-  //     cancelAnimationFrame(scrollSkills);
-  //   };
-  // }, []);
+    return () => {
+      cancelAnimationFrame(scrollSkills);
+    };
+  }, []);
 
   return (
     <div className="skills">

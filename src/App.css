@@ -9,6 +9,15 @@ header {
   grid-row: 1;
 }
 
+main {
+  margin: 5rem;
+}
+
 footer {
   grid-row: 3;
+}
+
+::selection {
+  background-color: var(--orange);
+  color: var(--white);
 }

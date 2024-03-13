@@ -5,6 +5,20 @@
   text-align: center;
 }
 
+h1 {
+  margin-bottom: 1rem;
+  font-family: Soria;
+  font-size: 4rem;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+.profile {
+  margin-right: 5rem;
+}
+
 .photo-and-nav {
   display: flex;
   flex-direction: column;

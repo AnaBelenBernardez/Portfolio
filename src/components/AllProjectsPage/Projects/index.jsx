@@ -10,9 +10,6 @@ function Projects() {
 
   return (
     <div className="projects">
-      <label className="section-title">
-        {t("translation.projectsSection")}
-      </label>
       <div className="projects-section">
         {data.map((project, index) => (
           <div className="project-card" key={index}>
