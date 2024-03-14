@@ -12,41 +12,42 @@ function Projects() {
     <div className="projects">
       <div className="projects-section">
         {data.map((project, index) => (
-          <div className="project-card" key={index}>
-            <Link to={`/project/${project.index}`}>
+          <Link to={`/project/${project.index}`}>
+            <div className="project-card" key={index}>
               <img
                 src={project.image}
                 alt={project.title}
                 className="project-photo"
               />
-            </Link>
-            <div className="project-links">
-              {project.demo && (
-                <a
-                  className="project-link"
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="link-button">
-                    <i className="fi-rr-globe"></i>Demo
-                  </div>
-                </a>
-              )}
-              {project.github && (
-                <a
-                  className="project-link"
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="link-button">
-                    <i className="devicon-github-original colored"></i>Github
-                  </div>
-                </a>
-              )}
+
+              <div className="project-links">
+                {project.demo && (
+                  <a
+                    className="project-link"
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="link-button">
+                      <i className="fi-rr-globe"></i>Demo
+                    </div>
+                  </a>
+                )}
+                {project.github && (
+                  <a
+                    className="project-link"
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="link-button">
+                      <i className="devicon-github-original colored"></i>Github
+                    </div>
+                  </a>
+                )}
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

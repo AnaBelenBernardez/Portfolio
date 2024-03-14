@@ -1,13 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import { useTranslation } from "react-i18next";
 
 function Contact() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [phrases, setPhrases] = useState([
+    t("translation.contact1"),
+    t("translation.contact2"),
+    t("translation.contact3"),
+    t("translation.contact4"),
+    t("translation.contact5"),
+  ]);
+  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
+
+  useEffect(() => {
+    setPhrases([
+      t("translation.contact1"),
+      t("translation.contact2"),
+      t("translation.contact3"),
+      t("translation.contact4"),
+      t("translation.contact5"),
+    ]);
+  }, [i18n.language, t]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentPhraseIndex((prevIndex) =>
+        prevIndex === phrases.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [phrases]);
 
   return (
     <div className="contact">
-      <p>{t("translation.contact")}</p>
+      <p>{phrases[currentPhraseIndex]}</p>
       <div className="socials">
         <a
           target="blank"

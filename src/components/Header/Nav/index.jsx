@@ -14,19 +14,23 @@ function Nav() {
       <nav className="navbar">
         <ul className="nav-list">
           <li>
-            <a href="/" className="homeButton">
+            <Link to="/" className="link-nav">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/projects">{t("translation.navProjects")}</a>
+            <Link className="link-nav" to="/projects">
+              {t("translation.navProjects")}
+            </Link>
           </li>
           <li>
-            <Link to="/about">{t("translation.navAbout")}</Link>
+            <Link className="link-nav" to="/about">
+              {t("translation.navAbout")}
+            </Link>
           </li>
           <li>
             {" "}
-            <a href={`CVs/${cvFileName}`} download>
+            <a className="link-nav" href={`CVs/${cvFileName}`} download>
               {t("translation.navCV")}
               <img
                 className="download"
