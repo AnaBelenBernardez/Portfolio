@@ -14,6 +14,9 @@ function Projects() {
         {data.map((project, index) => (
           <Link to={`/project/${project.index}`}>
             <div className="project-card" key={index}>
+              <div className="project-top-line">
+                <p>{project.title}</p>
+              </div>
               <img
                 src={project.image}
                 alt={project.title}
@@ -41,7 +44,7 @@ function Projects() {
                     rel="noopener noreferrer"
                   >
                     <div className="link-button">
-                      <i className="devicon-github-original colored"></i>Github
+                      <i className="devicon-github-original colored"></i>GitHub
                     </div>
                   </a>
                 )}

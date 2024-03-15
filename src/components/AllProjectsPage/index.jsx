@@ -12,9 +12,6 @@ function AllProjectsPage() {
   return (
     <div className="all">
       <main>
-        <label className="section-title">
-          {t("translation.projectsSection")}
-        </label>
         {/* <Skills /> */}
         <Projects />
         <SideNav />
