@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./style.css";
-import { SkillsData } from "../data/skills";
+import { SkillsData } from "../data/skills.jsx";
 import SkillCard from "./Skillcard";
 import { useTranslation } from "react-i18next";
 
@@ -33,11 +33,9 @@ function Skills() {
 
   return (
     <div className="skills">
-      <label className="section-title">{t("translation.skillsSection")}</label>
-
       <div className="skills-container">
         <div
-          class="MagicScroll"
+          className="MagicScroll"
           data-options="speed: 9000; step: 0; autoplay: 1; arrows: off; draggable: true;"
         >
           {data.map((skill, index) => (

@@ -82,8 +82,15 @@
   display: inline-block;
 }
 
-.devicon-github-original {
+#github-project,
+#demo-project {
   margin-right: 5px;
+  fill: var(--shadow);
+  position: relative;
+}
+
+#demo-project {
+  top: 1px;
 }
 
 .project-card:hover .project-photo {

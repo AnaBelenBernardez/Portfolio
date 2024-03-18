@@ -28,12 +28,12 @@ function PhotosAbout() {
           <div class="caption">Capi</div>
         </div>
       </div>
-      {/* <div id="plants" class="item">
+      <div id="hobbies" class="item">
         <div class="polaroid">
-          <img src="\assets\yep_thats_me.jpg" />
-          <div class="caption">🌱</div>
+          <img src="\assets\hobbies.jpg" />
+          <div class="caption">🌱🎮🎲🍜📚</div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

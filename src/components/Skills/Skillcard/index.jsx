@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { SkillsData } from "../../data/skills.jsx";
 
 function SkillCard({ skill }) {
   const { name, icon } = skill;

@@ -17,11 +17,6 @@ function LanguageSelector() {
         id="eng"
         onClick={() => handleChangeLanguage("en")}
       >
-        <img
-          src="./../../assets/UK_flag.svg"
-          alt="English flag"
-          className="lang-flag"
-        />
         {t("translation.langButtonEN")}
       </button>
       <button
@@ -29,11 +24,6 @@ function LanguageSelector() {
         id="gal"
         onClick={() => handleChangeLanguage("gz")}
       >
-        <img
-          src="./../../assets/Galician_flag.svg"
-          alt="Galician flag"
-          className="lang-flag"
-        />
         {t("translation.langButtonGZ")}
       </button>
       <button
@@ -41,11 +31,6 @@ function LanguageSelector() {
         id="esp"
         onClick={() => handleChangeLanguage("es")}
       >
-        <img
-          src="./../../assets/Spanish_flag.svg"
-          alt="Spanish flag"
-          className="lang-flag"
-        />
         {t("translation.langButtonES")}
       </button>
     </div>

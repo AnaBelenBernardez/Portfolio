@@ -8,6 +8,7 @@ function Contact() {
     t("translation.contact1"),
     t("translation.contact2"),
     t("translation.contact3"),
+    t("translation.contact6"),
     t("translation.contact4"),
     t("translation.contact5"),
   ]);
@@ -18,6 +19,7 @@ function Contact() {
       t("translation.contact1"),
       t("translation.contact2"),
       t("translation.contact3"),
+      t("translation.contact6"),
       t("translation.contact4"),
       t("translation.contact5"),
     ]);
