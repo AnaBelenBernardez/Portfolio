@@ -16,29 +16,37 @@ function Skills() {
   const { t } = useTranslation();
 
   return (
-    <CarouselProvider
-      totalSlides={data.length}
-      naturalSlideWidth={40}
-      naturalSlideHeight={45}
-      infinite="true"
-      interval={1000}
-      isPlaying={true}
-      visibleSlides={4}
-      id="carousel"
-      orientation="vertical"
-    >
-      <div className="slider-container">
-        <Slider className="slider">
-          {data.map((skill, index) => (
-            <Slide index={index} key={index}>
-              <SkillCard skill={skill} />
-            </Slide>
-          ))}
-        </Slider>
-        <ButtonBack id="buttonback">Back</ButtonBack>
-        <ButtonNext id="buttonnext">Next</ButtonNext>
-      </div>
-    </CarouselProvider>
+    // <CarouselProvider
+    //   totalSlides={data.length}
+    //   naturalSlideWidth={40}
+    //   naturalSlideHeight={45}
+    //   infinite="true"
+    //   interval={1000}
+    //   isPlaying={true}
+    //   visibleSlides={4}
+    //   id="carousel"
+    //   orientation="vertical"
+    // >
+    //   <div className="slider-container">
+    //     <Slider className="slider">
+    //       {data.map((skill, index) => (
+    //         <Slide index={index} key={index}>
+    //           <SkillCard skill={skill} />
+    //         </Slide>
+    //       ))}
+    //     </Slider>
+    //     <ButtonBack id="buttonback">Back</ButtonBack>
+    //     <ButtonNext id="buttonnext">Next</ButtonNext>
+    //   </div>
+    // </CarouselProvider>
+
+    <div className="skills-container">
+      {data.map((skill, index) => (
+        <div className="skill-item" key={index}>
+          <SkillCard skill={skill} />
+        </div>
+      ))}
+    </div>
   );
 }
 

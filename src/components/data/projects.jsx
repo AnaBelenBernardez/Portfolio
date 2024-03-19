@@ -24,8 +24,7 @@ export const ProjectData = [
     about: "Of course, this portfolio.",
     demo: "https://anabelen-portfolio.vercel.app/",
     github: "https://github.com/AnaBelenBernardez/Portfolio",
-    image:
-      "https://raw.githubusercontent.com/AnaBelenBernardez/MySignature/main/Images/myphoto.jpg",
+    image: "../assets/Portfolio.png",
   },
   {
     index: 4,

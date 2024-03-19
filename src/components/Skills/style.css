@@ -1,10 +1,20 @@
 .skills-container {
   display: flex;
-  justify-content: center; /* Centra horizontalmente los elementos */
-  align-items: center; /* Centra verticalmente los elementos */
-  border: 5px solid red;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.skill-item {
+  margin: 0.5rem;
+}
+
+/* 
 #carousel {
   border: 5px solid red;
   width: 100%;
@@ -18,8 +28,8 @@
 }
 
 .slider {
-  display: flex; /* Asegura que los elementos del carrusel se muestren en línea */
-  align-items: center; /* Centra verticalmente los elementos del carrusel */
+  display: flex;
+  align-items: center;
 }
 
 #buttonback,
@@ -27,16 +37,16 @@
   background-color: red;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); /* Centra verticalmente los botones */
+  transform: translateY(-50%);
   width: 5rem;
   height: 5rem;
 }
 
 #buttonback {
-  left: 0; /* Posiciona el botón "Back" a la izquierda */
+  left: 0;
 }
 
 #buttonnext {
-  right: 0; /* Posiciona el botón "Next" a la derecha */
-  margin-left: 1rem; /* Ajusta el margen entre los botones */
-}
+  right: 0;
+  margin-left: 1rem;
+} */

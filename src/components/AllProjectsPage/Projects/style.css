@@ -49,7 +49,7 @@
   object-fit: cover;
   width: 100%;
   margin-top: 2.5rem;
-  height: 9.5rem;
+  height: auto;
 }
 
 .project-links {
@@ -80,6 +80,11 @@
   padding: 5px 10px;
   border-radius: 5px;
   display: inline-block;
+  transition: scale 0.3s ease-in-out;
+}
+
+.link-button:hover {
+  scale: 1.2;
 }
 
 #github-project,

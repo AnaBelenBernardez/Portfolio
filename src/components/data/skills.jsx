@@ -95,8 +95,8 @@ export const SkillsData = [
     name: "Scrum",
     icon: (
       <svg
-        width="8rem"
-        height="8rem"
+        width="5rem"
+        height="5rem"
         viewBox="0 0 32 32"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -239,8 +239,8 @@ export const SkillsData = [
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
-        width="8rem"
-        height="8rem"
+        width="4rem"
+        height="4rem"
         viewBox="0 0 512.000000 512.000000"
         preserveAspectRatio="xMidYMid meet"
       >
@@ -329,8 +329,8 @@ c-31 32 -74 33 -104 1z"
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
-        width="8rem"
-        height="8rem"
+        width="4rem"
+        height="4rem"
         viewBox="0 0 512.000000 512.000000"
         preserveAspectRatio="xMidYMid meet"
       >
