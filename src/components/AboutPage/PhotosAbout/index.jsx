@@ -4,35 +4,35 @@ import "./style.css";
 function PhotosAbout() {
   return (
     <div className="photosAbout">
-      <div id="thats-me" class="item">
-        <div class="polaroid">
+      <div id="thats-me" className="item">
+        <div className="polaroid">
           <img src="\assets\yep_thats_me.jpg" />
-          <div class="caption mirror">✌😁</div>
+          <div className="caption mirror">✌😁</div>
         </div>
       </div>
-      <div id="teamwork" class="item">
-        <div class="polaroid">
+      <div id="teamwork" className="item">
+        <div className="polaroid">
           <img src="\assets\team.jpeg" />
-          <div class="caption">Teamwork</div>
+          <div className="caption">Teamwork</div>
         </div>
       </div>
-      <div id="hobbies" class="item">
-        <div class="polaroid">
+      <div id="hobbies" className="item">
+        <div className="polaroid">
           <img src="\assets\hobbies.jpg" />
-          <div class="caption">🌱🎮🎲🍜📚</div>
+          <div className="caption">🌱🎮🎲🍜📚</div>
         </div>
       </div>
 
-      <div id="drogo" class="item">
-        <div class="polaroid">
+      <div id="drogo" className="item">
+        <div className="polaroid">
           <img src="\assets\Drogo.png" />
-          <div class="caption">Drogo</div>
+          <div className="caption">Drogo</div>
         </div>
       </div>
-      <div id="capi" class="item">
-        <div class="polaroid">
+      <div id="capi" className="item">
+        <div className="polaroid">
           <img src="\assets\Capi.png" />
-          <div class="caption">Capi</div>
+          <div className="caption">Capi</div>
         </div>
       </div>
     </div>

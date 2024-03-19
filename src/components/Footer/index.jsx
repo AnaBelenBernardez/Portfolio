@@ -10,7 +10,6 @@ function Footer() {
     <footer className="footer">
       {t("translation.footer")}
       <span title={t("translation.love")}>🧡</span>
-      <LanguageSelector />
     </footer>
   );
 }

@@ -14,7 +14,7 @@ function AllProjectsPage() {
       <main>
         <Skills />
         <Projects />
-        <SideNav />
+        {/* <SideNav /> */}
         <ScrollToTop />
       </main>
     </div>

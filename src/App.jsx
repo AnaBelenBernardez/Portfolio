@@ -8,11 +8,16 @@ import AllProjectsPage from "./components/AllProjectsPage";
 import ProjectPage from "./components/ProjectPage";
 import NotFoundPage from "./components/NotFoundPage";
 import Header from "./components/Header";
+import LanguageSelector from "./components/LanguageSelector";
+import PageTitle from "./components/details/PageTitle";
+import ScrollBar from "./components/details/ScrollBar";
 
 function App() {
   return (
     <div className="app">
+      <PageTitle />
       <Header />
+      <LanguageSelector />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
