@@ -12,15 +12,18 @@
   text-align: justify;
   font-size: 1rem;
   line-height: 1.5;
-  margin-left: 20%;
+  margin-left: 10%;
+  margin-right: 20%;
   padding: 3rem;
   border-radius: 35px;
   background-color: var(--white);
-  box-shadow: -10px 10px 0 0 #182739, 0 0 0 5px #182739;
+  box-shadow: 10px 10px 0 0 #182739, 0 0 0 5px #182739;
 }
 
 .contact-box {
-  grid-column: 2 / 3;
+  grid-column: 1 / 2;
+  margin-left: 10%;
+  margin-right: 20%;
 }
 
 .photosAbout {
@@ -28,5 +31,5 @@
 }
 
 .contact-box {
-  height: 50%;
+  height: 30%;
 }

@@ -1,5 +1,42 @@
 .skills-container {
   display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
   border: 5px solid red;
-  margin-bottom: 4rem;
+}
+
+#carousel {
+  border: 5px solid red;
+  width: 100%;
+  height: 20rem;
+}
+
+.slider-container {
+  background-color: blue;
+  width: 100%;
+  height: 20rem;
+}
+
+.slider {
+  display: flex; /* Asegura que los elementos del carrusel se muestren en línea */
+  align-items: center; /* Centra verticalmente los elementos del carrusel */
+}
+
+#buttonback,
+#buttonnext {
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Centra verticalmente los botones */
+  width: 5rem;
+  height: 5rem;
+}
+
+#buttonback {
+  left: 0; /* Posiciona el botón "Back" a la izquierda */
+}
+
+#buttonnext {
+  right: 0; /* Posiciona el botón "Next" a la derecha */
+  margin-left: 1rem; /* Ajusta el margen entre los botones */
 }

@@ -1,10 +1,10 @@
 .skill-card {
-  width: 12%;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
-.skill-icon,
-.skill-icon > img {
-  font-size: 100px;
-  width: 90px;
+.skill-icon {
+  width: 8rem;
+  margin-right: 2rem;
+  background-color: white;
 }

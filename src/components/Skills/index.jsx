@@ -1,51 +1,44 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./style.css";
 import { SkillsData } from "../data/skills.jsx";
 import SkillCard from "./Skillcard";
 import { useTranslation } from "react-i18next";
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from "pure-react-carousel";
 
 function Skills() {
   const data = SkillsData;
   const { t } = useTranslation();
-  const skillsContainerRef = useRef(null);
-
-  useEffect(() => {
-    const skillsContainer = skillsContainerRef.current;
-    let scrollPosition = 0;
-
-    const scrollSkills = () => {
-      scrollPosition += 3;
-      skillsContainer.style.transform = `translateX(-${scrollPosition}px)`;
-
-      if (scrollPosition >= skillsContainer.scrollWidth) {
-        scrollPosition = 0;
-      }
-
-      requestAnimationFrame(scrollSkills);
-    };
-
-    requestAnimationFrame(scrollSkills);
-
-    return () => {
-      cancelAnimationFrame(scrollSkills);
-    };
-  }, []);
 
   return (
-    <div className="skills">
-      <div className="skills-container">
-        <div
-          className="MagicScroll"
-          data-options="speed: 9000; step: 0; autoplay: 1; arrows: off; draggable: true;"
-        >
+    <CarouselProvider
+      totalSlides={data.length}
+      naturalSlideWidth={40}
+      naturalSlideHeight={45}
+      infinite="true"
+      interval={1000}
+      isPlaying={true}
+      visibleSlides={4}
+      id="carousel"
+      orientation="vertical"
+    >
+      <div className="slider-container">
+        <Slider className="slider">
           {data.map((skill, index) => (
-            <div className="skill-item" key={index}>
+            <Slide index={index} key={index}>
               <SkillCard skill={skill} />
-            </div>
+            </Slide>
           ))}
-        </div>
+        </Slider>
+        <ButtonBack id="buttonback">Back</ButtonBack>
+        <ButtonNext id="buttonnext">Next</ButtonNext>
       </div>
-    </div>
+    </CarouselProvider>
   );
 }
 

@@ -12,7 +12,7 @@ function AllProjectsPage() {
   return (
     <div className="all">
       <main>
-        <Skills />
+        {/* <Skills /> */}
         <Projects />
         <SideNav />
         <ScrollToTop />
