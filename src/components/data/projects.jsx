@@ -1,13 +1,11 @@
 export const ProjectData = [
   {
-    index: 1,
-    title: "Badum - Tss",
-    about:
-      "Game that allows using the mouse or the keyboard to simulate the sounds of a drum set.",
-    demo: "https://badum-tss.vercel.app/",
-    github: "https://github.com/AnaBelenBernardez/BateriaJS",
+    index: 4,
+    title: "MeeMee",
+    about: "MeeMee it's a platform to connect people with similar interests.",
+    github: "https://github.com/AnaBelenBernardez/MeeMee",
     image:
-      "https://raw.githubusercontent.com/anabelenbernardez/BateriaJS/main/extras/imagen2.png",
+      "https://raw.githubusercontent.com/AnaBelenBernardez/MeeMee/main/assets/MeeMee.png",
   },
   {
     index: 2,
@@ -19,22 +17,6 @@ export const ProjectData = [
       "https://raw.githubusercontent.com/AnaBelenBernardez/SkillVerse/main/Frontend/public/images/HomeSkillverse.gif",
   },
   {
-    index: 3,
-    title: "Portfolio",
-    about: "Of course, this portfolio.",
-    demo: "https://anabelen-portfolio.vercel.app/",
-    github: "https://github.com/AnaBelenBernardez/Portfolio",
-    image: "../assets/Portfolio.png",
-  },
-  {
-    index: 4,
-    title: "MeeMee",
-    about: "MeeMee it's a platform to connect people with similar interests.",
-    github: "https://github.com/AnaBelenBernardez/MeeMee",
-    image:
-      "https://raw.githubusercontent.com/AnaBelenBernardez/MeeMee/main/assets/MeeMee.png",
-  },
-  {
     index: 5,
     title: "AECC A Coruña",
     about:
@@ -44,12 +26,30 @@ export const ProjectData = [
       "https://raw.githubusercontent.com/AnaBelenBernardez/aecc/main/docs/assets/mockup.png",
   },
   {
+    index: 1,
+    title: "Badum - Tss",
+    about:
+      "Game that allows using the mouse or the keyboard to simulate the sounds of a drum set.",
+    demo: "https://badum-tss.vercel.app/",
+    github: "https://github.com/AnaBelenBernardez/BateriaJS",
+    image:
+      "https://raw.githubusercontent.com/anabelenbernardez/BateriaJS/main/extras/imagen2.png",
+  },
+  {
     index: 6,
     title: "My Videogame Stash",
     about: "Compilation of my favorite games",
     demo: "https://game-stash.vercel.app/",
     github: "https://github.com/AnaBelenBernardez/game_stash",
     image:
-      "https://raw.githubusercontent.com/AnaBelenBernardez/game_stash/main/public/GS1.png",
+      "https://raw.githubusercontent.com/AnaBelenBernardez/game_stash/main/public/GS0.png",
+  },
+  {
+    index: 3,
+    title: "Portfolio",
+    about: "Of course, this portfolio.",
+    demo: "https://anabelen-portfolio.vercel.app/",
+    github: "https://github.com/AnaBelenBernardez/Portfolio",
+    image: "../assets/Portfolio.png",
   },
 ];

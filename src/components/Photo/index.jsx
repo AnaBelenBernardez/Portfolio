@@ -4,7 +4,12 @@ import "./style.css";
 function Photo() {
   return (
     <div className="photo">
-      <img src="./assets/photo.png" alt="Ana Belén" title="Ana Belén" />
+      <img
+        loading="lazy"
+        src="./assets/photo.png"
+        alt="Ana Belén"
+        title="Ana Belén"
+      />
     </div>
   );
 }

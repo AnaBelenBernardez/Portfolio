@@ -28,7 +28,12 @@ function ProjectCard({ project }) {
         </div>
         <p>{t(aboutTranslationKey)}</p>
       </div>
-      <img src={project.image} alt={project.title} className="project-photo" />
+      <img
+        loading="lazy"
+        src={project.image}
+        alt={project.title}
+        className="project-photo"
+      />
     </div>
   );
 }

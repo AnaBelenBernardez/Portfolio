@@ -30,9 +30,9 @@ function PageTitle() {
       if (currentPath === "/") {
         pageTitle = "Portfolio";
       } else if (currentPath === "/about") {
-        pageTitle = "About me";
+        pageTitle = "✧˖°.";
       } else if (currentPath === "/projects") {
-        pageTitle = "Projects";
+        pageTitle = "˗ˏˋ 📚☕︎🎧💻 ˎˊ˗";
       } else if (currentPath === "*") {
         pageTitle = "404";
       }

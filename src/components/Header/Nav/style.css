@@ -14,26 +14,31 @@
   width: 100%;
 }
 
+.nav-list > li {
+  display: flex;
+  text-align: center;
+}
+
 .link-nav {
   text-decoration: none;
   color: var(--shadow);
   font-size: 1.5rem;
   margin-right: 6rem;
   flex-grow: 1;
+  transition: color 0.2s ease-in-out;
 }
 
 .download {
   position: absolute;
   margin-left: 1rem;
+  transition: fill 0.2s ease-in-out;
 }
 
-@media (max-width: 768px) {
-  .nav-list {
-    flex-direction: column; /* Cambiar a diseño de columna en dispositivos pequeños */
-    border: none; /* Eliminar el borde en dispositivos pequeños */
-  }
+.link-nav:hover {
+  color: var(--orange);
+  text-align: center;
+}
 
-  .link-nav {
-    margin: 0.5rem 0; /* Ajustar el margen en dispositivos pequeños */
-  }
+.link-nav:hover > svg {
+  fill: var(--orange);
 }

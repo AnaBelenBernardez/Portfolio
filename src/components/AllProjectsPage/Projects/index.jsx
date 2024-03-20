@@ -18,6 +18,7 @@ function Projects() {
               <p>{project.title}</p>
             </div>
             <img
+              loading="lazy"
               src={project.image}
               alt={project.title}
               className="project-photo"
