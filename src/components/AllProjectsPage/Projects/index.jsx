@@ -21,7 +21,7 @@ function Projects() {
               loading="lazy"
               src={project.image}
               alt={project.title}
-              className="project-photo"
+              className={`project-photo project-${index + 1}`}
             />
 
             <div className="project-links">

@@ -43,7 +43,7 @@ function Nav() {
                 height="2rem"
                 viewBox="0 0 89 81"
                 xmlns="http://www.w3.org/2000/svg"
-                xml:space="preserve"
+                xmlSpace="preserve"
                 version="1.1"
                 fill="#182739"
               >

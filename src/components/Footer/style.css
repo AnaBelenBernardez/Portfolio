@@ -11,3 +11,14 @@
 .footer span {
   margin-left: 0.2rem;
 }
+
+.love-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.confetti-container {
+  position: relative;
+  display: inline-block;
+}

@@ -27,13 +27,13 @@ export const ProjectData = [
   },
   {
     index: 1,
-    title: "Badum - Tss",
+    title: "BADUM - TSS",
     about:
       "Game that allows using the mouse or the keyboard to simulate the sounds of a drum set.",
     demo: "https://badum-tss.vercel.app/",
     github: "https://github.com/AnaBelenBernardez/BateriaJS",
     image:
-      "https://raw.githubusercontent.com/anabelenbernardez/BateriaJS/main/extras/imagen2.png",
+      "https://raw.githubusercontent.com/AnaBelenBernardez/BateriaJS/main/extras/badum-tss.png",
   },
   {
     index: 6,

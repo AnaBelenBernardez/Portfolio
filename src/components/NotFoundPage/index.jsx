@@ -10,7 +10,9 @@ function NotFoundPage() {
       <main>
         <h1>404</h1>
         <h2>Page not found</h2>
-        <a href="/">GO BACK</a>
+        <div>
+          <a href="/">GO BACK</a>
+        </div>
       </main>
     </div>
   );
