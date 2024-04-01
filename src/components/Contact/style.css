@@ -53,3 +53,29 @@
   color: #182739;
   transition: color 0.5s ease;
 }
+
+@media (max-width: 600px) {
+  .contact {
+    width: 20rem;
+    height: 5rem;
+  }
+
+  .socials {
+    margin-right: 0rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .socials > a {
+    margin: 0 4px;
+    font-size: 26px;
+  }
+
+  .contact > p {
+    font-size: 11px;
+    padding-top: 0.8rem;
+  }
+
+  .contact > a {
+    font-size: 34px;
+  }
+}
