@@ -42,6 +42,10 @@
   width: 24%;
 }
 
+#teamwork .caption {
+  color: var(--orange);
+}
+
 #thats-me {
   position: absolute;
   top: 15%;
@@ -148,8 +152,51 @@
   transition: all 0.35s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
+}
+
+@media (max-width: 882px) {
   .photosAbout {
     width: 90%;
   }
+  .polaroid {
+    position: relative;
+  }
+
+  #thats-me {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #drogo {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #capi {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #hobbies {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  #teamwork {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
 }

@@ -9,6 +9,7 @@ function SkillCard({ skill }) {
     <div className="skill-card">
       <div className="skill-icon" title={name}>
         {icon}
+        {/* {name} */}
       </div>
     </div>
   );

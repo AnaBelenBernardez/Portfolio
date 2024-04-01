@@ -9,9 +9,9 @@ function Footer() {
     "rewardId",
     "emoji",
     {
-      emoji: ["🧡", "✦", "⟡"],
+      emoji: ["🧡", "✨"],
       elementSize: 12,
-      elementCount: 50,
+      elementCount: 70,
       decay: 0.95,
       spread: 70,
       zIndex: 999,
