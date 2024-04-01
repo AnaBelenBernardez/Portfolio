@@ -24,3 +24,30 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
+
+@media (max-width: 820px) {
+  .home {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    margin-bottom: 0.1rem;
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .profile {
+    margin-bottom: 2rem;
+    margin-right: 0rem;
+  }
+
+  .photo-and-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

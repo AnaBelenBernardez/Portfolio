@@ -23,7 +23,7 @@ header {
   background-color: white;
 }
 
-@media screen and (max-width: 1120px) {
+@media (max-width: 1120px) {
   header {
     top: 1rem;
     padding: 5px;
