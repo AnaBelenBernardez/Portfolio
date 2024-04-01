@@ -44,12 +44,4 @@ export const ProjectData = [
     image:
       "https://raw.githubusercontent.com/AnaBelenBernardez/game_stash/main/public/GS0.png",
   },
-  {
-    index: 3,
-    title: "Portfolio",
-    about: "Of course, this portfolio.",
-    demo: "https://anabelen-portfolio.vercel.app/",
-    github: "https://github.com/AnaBelenBernardez/Portfolio",
-    image: "../assets/Portfolio.png",
-  },
 ];

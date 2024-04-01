@@ -4,8 +4,8 @@ import Nav from "./Nav";
 
 function Header() {
   return (
-    <header className="header">
-      <div className="sticky-header">
+    <header>
+      <div className="header">
         <Nav />
       </div>
     </header>

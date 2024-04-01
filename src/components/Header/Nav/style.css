@@ -26,6 +26,7 @@
   margin-right: 6rem;
   flex-grow: 1;
   transition: color 0.2s ease-in-out;
+  white-space: nowrap;
 }
 
 .download {
@@ -41,4 +42,56 @@
 
 .link-nav:hover > svg {
   fill: var(--orange);
+}
+
+@media screen and (max-width: 1120px) {
+  .nav-container {
+    margin: 3rem;
+  }
+
+  .link-nav {
+    font-size: 1.3rem;
+    margin-right: 3rem;
+  }
+
+  .download {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 882px) {
+  .nav-container {
+    margin: 0rem;
+    font-size: 1rem;
+  }
+
+  .link-nav {
+    font-size: 1rem;
+    margin-right: 1.5rem;
+  }
+
+  .download {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    margin: 0rem;
+  }
+
+  .link-nav {
+    font-size: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  .download {
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-left: 0.1rem;
+  }
 }
