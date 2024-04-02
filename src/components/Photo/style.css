@@ -6,3 +6,11 @@
   border: 20px solid #fdf7f7;
   box-shadow: 10px 10px 0 0 #182739, 0 0 0 5px #182739;
 }
+
+@media (max-width: 480px) {
+  .photo > img {
+    width: 15rem;
+    height: 15rem;
+    border-width: 10px;
+  }
+}

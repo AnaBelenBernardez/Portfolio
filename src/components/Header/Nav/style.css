@@ -1,9 +1,7 @@
 .nav-container {
-  margin: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   font-family: Soria;
 }
 
@@ -33,15 +31,6 @@
   position: absolute;
   margin-left: 1rem;
   transition: fill 0.2s ease-in-out;
-}
-
-.link-nav:hover {
-  color: var(--orange);
-  text-align: center;
-}
-
-.link-nav:hover > svg {
-  fill: var(--orange);
 }
 
 @media (max-width: 1120px) {
@@ -85,13 +74,13 @@
   }
 
   .link-nav {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin-right: 0.75rem;
   }
 
   .download {
     width: 0.7rem;
-    height: 0.7rem;
-    margin-left: 0.1rem;
+    transform: translateX(-50%);
+    margin-left: 0.4rem;
   }
 }

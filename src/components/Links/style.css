@@ -34,3 +34,17 @@
 .profile-links svg:hover #svg_2 {
   fill: var(--orange);
 }
+
+@media (max-width: 480px) {
+  .profile-links {
+    margin-top: 0.3rem;
+  }
+  .profile-links a {
+    margin: 5px;
+    font-size: 2rem;
+  }
+
+  .svg-email {
+    width: 2rem;
+  }
+}
