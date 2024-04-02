@@ -7,3 +7,9 @@
   width: 4rem;
   height: auto;
 }
+
+@media (max-width: 600px) {
+  .skill-icon {
+    width: 3.1rem;
+  }
+}
