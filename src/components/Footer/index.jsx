@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import "./style.css";
 import { useReward } from "react-rewards";
+import LanguageSelector from "../LanguageSelector";
 
 function Footer() {
   const { t } = useTranslation();
@@ -21,19 +22,24 @@ function Footer() {
 
   return (
     <footer className="footer">
-      {t("translation.footer")}
-      <span title={t("translation.love")} className="confetti-container">
-        <button
-          className="love-button"
-          disabled={isAnimating}
-          onClick={() => {
-            confettiReward();
-          }}
-        >
-          <span id="rewardId" className="rewardId" />
-          🧡
-        </button>
-      </span>
+      <div className="languageSelectorContainer">
+        <LanguageSelector />
+      </div>
+      <p>
+        {t("translation.footer")}
+        <span title={t("translation.love")} className="confetti-container">
+          <button
+            className="love-button"
+            disabled={isAnimating}
+            onClick={() => {
+              confettiReward();
+            }}
+          >
+            <span id="rewardId" className="rewardId" />
+            🧡
+          </button>
+        </span>
+      </p>
     </footer>
   );
 }

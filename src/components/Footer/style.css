@@ -6,10 +6,7 @@
   font-size: 1rem;
   letter-spacing: 1.5px;
   font-weight: bold;
-}
-
-.footer span {
-  margin-left: 0.2rem;
+  position: relative;
 }
 
 .love-button {
@@ -21,4 +18,21 @@
 .confetti-container {
   position: relative;
   display: inline-block;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: Soria;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  position: relative;
+}
+
+.languageSelectorContainer {
+  position: absolute;
+  transform: translateY(-50%);
 }
