@@ -27,6 +27,15 @@
   white-space: nowrap;
 }
 
+.link-nav:hover {
+  color: var(--orange);
+  text-align: center;
+}
+
+.link-nav:hover > svg {
+  fill: var(--orange);
+}
+
 .download {
   position: absolute;
   margin-left: 1rem;
