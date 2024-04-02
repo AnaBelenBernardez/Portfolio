@@ -9,6 +9,7 @@ h1 {
   margin-bottom: 1rem;
   font-family: Soria;
   font-size: 4rem;
+  color: var(--shadow);
 }
 
 h2 {

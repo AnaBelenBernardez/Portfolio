@@ -4,6 +4,8 @@
   width: 100%;
   gap: 3rem;
   justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .project-card {
@@ -37,7 +39,6 @@
   color: var(--shadow);
   font-family: Soria;
   text-align: center;
-  /* text-transform: uppercase; */
   font-size: 1.6rem;
   font-weight: 900;
   height: 100%;

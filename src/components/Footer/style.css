@@ -7,6 +7,7 @@
   letter-spacing: 1.5px;
   font-weight: bold;
   position: relative;
+  color: var(--shadow);
 }
 
 .love-button {

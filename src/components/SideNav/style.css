@@ -1,6 +1,6 @@
 .side-navigator {
   position: fixed;
-  top: 30%;
+  top: 25vh;
   right: 0px;
   transform: translateY(-50%);
   display: flex;
@@ -43,4 +43,19 @@
 
 .side-navigator svg:hover #id_103 {
   stroke: var(--orange);
+}
+
+@media (max-width: 600px) {
+  .side-navigator {
+    top: 20vh;
+  }
+  .side-navigator a {
+    display: block;
+    margin: 6px;
+    font-size: 1.3rem;
+  }
+
+  .svg-wrapper {
+    width: 1.3rem;
+  }
 }
