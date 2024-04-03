@@ -30,7 +30,7 @@ function Contact() {
       setCurrentPhraseIndex((prevIndex) =>
         prevIndex === phrases.length - 1 ? 0 : prevIndex + 1
       );
-    }, 1000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [phrases]);

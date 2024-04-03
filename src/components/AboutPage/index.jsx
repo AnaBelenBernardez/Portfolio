@@ -14,7 +14,7 @@ function AboutPage() {
       <div className="about">
         <p className="textAbout">{t("translation.about")}</p>
       </div>
-      {/* <PhotosAbout /> */}
+      <PhotosAbout />
       <div className="contact-box">
         <Contact />
       </div>
