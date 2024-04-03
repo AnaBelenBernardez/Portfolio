@@ -40,7 +40,7 @@
   padding-top: 0.7rem;
 }
 
-.contact > a {
+.contact-me > a {
   font-family: Soria;
   font-size: 50px;
   text-decoration: none;
@@ -50,18 +50,16 @@
   margin-left: 1rem;
 }
 
-.contact > a:hover {
+.contact-me > a:hover {
   color: #182739;
   transition: color 0.5s ease;
 }
 
 @media (max-width: 600px) {
   .contact {
-    min-width: 20rem;
-    width: auto;
+    width: 90vw;
     height: 5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    position: relative;
   }
 
   .socials {
@@ -71,15 +69,32 @@
 
   .socials > a {
     margin: 0 4px;
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .contact > p {
-    font-size: 11px;
-    padding-top: 0.8rem;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 8px;
   }
 
-  .contact > a {
+  .contact-me > a {
     font-size: 34px;
+  }
+
+  .contact-me {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-me > * {
+    display: inline-block;
+    margin: 0;
   }
 }

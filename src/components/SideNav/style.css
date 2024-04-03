@@ -47,15 +47,6 @@
 
 @media (max-width: 600px) {
   .side-navigator {
-    top: 20vh;
-  }
-  .side-navigator a {
-    display: block;
-    margin: 6px;
-    font-size: 1.3rem;
-  }
-
-  .svg-wrapper {
-    width: 1.3rem;
+    display: none;
   }
 }
