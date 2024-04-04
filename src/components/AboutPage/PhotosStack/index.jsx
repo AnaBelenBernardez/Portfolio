@@ -1,81 +1,87 @@
-// import React from "react";
-// import "./style.css";
-
-// function PhotosStack() {
-//   return (
-//     <div className="photosAbout">
-//       <div id="thats-me" className="item">
-//         <div className="polaroid">
-//           <img loading="lazy" src="\assets\yep_thats_me.jpg" />
-//           <div className="caption mirror">✌😁</div>
-//         </div>
-//       </div>
-//       <div id="teamwork" className="item">
-//         <div className="polaroid">
-//           <img loading="lazy" src="\assets\team.jpeg" />
-//           <div className="caption">-`♡´-</div>
-//         </div>
-//       </div>
-//       <div id="hobbies" className="item">
-//         <div className="polaroid">
-//           <img loading="lazy" src="\assets\hobbies.jpg" />
-//           <div className="caption">🌱🎮🎲🍜📚</div>
-//         </div>
-//       </div>
-
-//       <div id="drogo" className="item">
-//         <div className="polaroid">
-//           <img loading="lazy" src="\assets\Drogo.png" />
-//           <div className="caption">Drogo 🖤</div>
-//         </div>
-//       </div>
-//       <div id="capi" className="item">
-//         <div className="polaroid">
-//           <img loading="lazy" src="\assets\Capi.png" />
-//           <div className="caption">Capi 🧡</div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default PhotosStack;
-
-// PhotosStack.jsx
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./style.css";
-const PhotosStack = () => {
-  const [currentCard, setCurrentCard] = useState(0);
-  const cards = [
-    { title: "Comment Card 1", content: "Lorem ipsum" },
-    { title: "Comment Card 2", content: "Vestibulum nunc massa" },
-    {
-      title: "Comment Card 3",
-      content:
-        "Donec nunc ligula, vulputate quis mollis eu, interdum quis libero. Donec nulla ante, facilisis sit amet vulputate at, tincidunt a velit. Maece nulla.",
-    },
-    { title: "Comment Card 4", content: "Donec nunc ligula, vul nulla." },
-  ];
 
-  const handleClick = () => {
-    const nextCard = (currentCard + 1) % cards.length;
-    setCurrentCard(nextCard);
-  };
+function PhotosStack() {
+  useEffect(() => {
+    const cardsContainer = document.querySelector(".cards");
+    const cards = cardsContainer.querySelectorAll(".card");
+    let currentCard = cardsContainer.querySelector(".card--current");
+    let nextCard;
+
+    const clickHandler = () => {
+      cards.forEach((c) => {
+        c.classList.remove("card--current", "card--out", "card--next");
+      });
+
+      currentCard.classList.add("card--out");
+      nextCard = currentCard.nextElementSibling;
+      currentCard = nextCard ? nextCard : cards[0];
+      currentCard.classList.add("card--current");
+      nextCard = currentCard.nextElementSibling;
+      nextCard = nextCard ? nextCard : cards[0];
+      nextCard.classList.add("card--next");
+    };
+
+    cardsContainer.addEventListener("click", clickHandler);
+
+    if (!currentCard) {
+      currentCard = cards[cards.length - 1];
+      cards[0].click();
+    }
+
+    cardsContainer.classList.add("cards--active");
+
+    return () => {
+      cardsContainer.removeEventListener("click", clickHandler);
+    };
+  }, []);
 
   return (
-    <ul className="cards">
-      {cards.map((card, index) => (
-        <li
-          key={index}
-          onClick={handleClick}
-          className={`card ${index === currentCard ? "card--current" : ""}`}
-        >
-          <h1>{card.title}</h1>
-          <p>{card.content}</p>
+    <main>
+      <ul className="cards">
+        <li className="card">
+          <div className="stack">
+            <div className="polaroid">
+              <img loading="lazy" src="\assets\yep_thats_me.jpg" />
+              <div className="caption mirror">✌😁</div>
+            </div>
+          </div>
         </li>
-      ))}
-    </ul>
+        <li className="card ">
+          <div className="stack">
+            <div className="polaroid">
+              <img loading="lazy" src="\assets\team.jpeg" />
+              <div className="caption">-`♡´-</div>
+            </div>
+          </div>
+        </li>
+        <li className="card ">
+          <div className="stack">
+            <div className="polaroid">
+              <img loading="lazy" src="\assets\hobbies.jpg" />
+              <div className="caption">🌱🎮🎲🍜📚</div>
+            </div>
+          </div>
+        </li>
+        <li className="card ">
+          <div className="stack">
+            <div className="polaroid">
+              <img loading="lazy" src="\assets\Drogo.png" />
+              <div className="caption">Drogo 🖤</div>
+            </div>
+          </div>
+        </li>
+        <li className="card ">
+          <div className="stack">
+            <div className="polaroid">
+              <img loading="lazy" src="\assets\Capi.png" />
+              <div className="caption">Capi 🧡</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
   );
-};
+}
 
 export default PhotosStack;
