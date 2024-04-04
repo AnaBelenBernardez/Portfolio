@@ -42,7 +42,11 @@ function PhotosStack() {
         <li className="card">
           <div className="stack">
             <div className="polaroid">
-              <img loading="lazy" src="\assets\yep_thats_me.jpg" />
+              <img
+                id="me-stack"
+                loading="lazy"
+                src="\assets\yep_thats_me.jpg"
+              />
               <div className="caption mirror">✌😁</div>
             </div>
           </div>
@@ -50,7 +54,7 @@ function PhotosStack() {
         <li className="card ">
           <div className="stack">
             <div className="polaroid">
-              <img loading="lazy" src="\assets\team.jpeg" />
+              <img id="team-stack" loading="lazy" src="\assets\team.jpeg" />
               <div className="caption">-`♡´-</div>
             </div>
           </div>
@@ -58,7 +62,11 @@ function PhotosStack() {
         <li className="card ">
           <div className="stack">
             <div className="polaroid">
-              <img loading="lazy" src="\assets\hobbies.jpg" />
+              <img
+                id="hobbies-stack"
+                loading="lazy"
+                src="\assets\hobbies.jpg"
+              />
               <div className="caption">🌱🎮🎲🍜📚</div>
             </div>
           </div>
@@ -66,7 +74,7 @@ function PhotosStack() {
         <li className="card ">
           <div className="stack">
             <div className="polaroid">
-              <img loading="lazy" src="\assets\Drogo.png" />
+              <img id="drogo-stack" loading="lazy" src="\assets\Drogo600.png" />
               <div className="caption">Drogo 🖤</div>
             </div>
           </div>
@@ -74,7 +82,7 @@ function PhotosStack() {
         <li className="card ">
           <div className="stack">
             <div className="polaroid">
-              <img loading="lazy" src="\assets\Capi.png" />
+              <img id="capi-stack" loading="lazy" src="\assets\Capi.jpg" />
               <div className="caption">Capi 🧡</div>
             </div>
           </div>

@@ -31,7 +31,7 @@ function PhotosAbout() {
       </div>
       <div id="capi" className="item">
         <div className="polaroid">
-          <img loading="lazy" src="\assets\Capi.png" />
+          <img loading="lazy" src="\assets\Capi.jpg" />
           <div className="caption">Capi 🧡</div>
         </div>
       </div>
