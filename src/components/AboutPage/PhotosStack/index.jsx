@@ -37,7 +37,7 @@ function PhotosStack() {
   }, []);
 
   return (
-    <main>
+    <div className="photos-stack">
       <ul className="cards">
         <li className="card">
           <div className="stack">
@@ -53,20 +53,16 @@ function PhotosStack() {
         </li>
         <li className="card ">
           <div className="stack">
-            <div className="polaroid">
-              <img id="team-stack" loading="lazy" src="\assets\team.jpeg" />
+            <div id="team-stack" className="polaroid">
+              <img loading="lazy" src="\assets\team.jpeg" />
               <div className="caption">-`♡´-</div>
             </div>
           </div>
         </li>
         <li className="card ">
           <div className="stack">
-            <div className="polaroid">
-              <img
-                id="hobbies-stack"
-                loading="lazy"
-                src="\assets\hobbies.jpg"
-              />
+            <div id="hobbies-stack" className="polaroid">
+              <img loading="lazy" src="\assets\hobbies.jpg" />
               <div className="caption">🌱🎮🎲🍜📚</div>
             </div>
           </div>
@@ -88,7 +84,7 @@ function PhotosStack() {
           </div>
         </li>
       </ul>
-    </main>
+    </div>
   );
 }
 
