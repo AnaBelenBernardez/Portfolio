@@ -7,3 +7,10 @@
   align-items: center;
   font-family: Soria;
 }
+
+@media (max-width: 847px) {
+  .all-projects {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

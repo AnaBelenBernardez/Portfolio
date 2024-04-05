@@ -10,14 +10,12 @@ function AllProjectsPage() {
   const { t } = useTranslation();
 
   return (
-    <div className="all">
-      <main>
-        <Skills />
-        <Projects />
-        <SideNav />
-        <ScrollToTop />
-      </main>
-    </div>
+    <main className="all-projects">
+      <Skills />
+      <Projects />
+      <SideNav />
+      <ScrollToTop />
+    </main>
   );
 }
 

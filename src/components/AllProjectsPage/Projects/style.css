@@ -113,6 +113,10 @@
   margin-top: 0.2rem;
 }
 
+.project-card.project-1 {
+  background-color: #f7edfd;
+}
+
 .project-photo.project-2 {
   object-fit: contain;
   width: 140%;
@@ -126,6 +130,14 @@
   margin-left: -1rem;
 }
 
+.project-card.project-4 {
+  background-color: #1e1e24;
+}
+
+.project-card.project-5 {
+  background-color: #a3e58a;
+}
+
 .project-photo.project-6 {
   object-fit: contain;
   width: 135%;
@@ -133,5 +145,5 @@
   margin-top: 0rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 719px) {
 }
