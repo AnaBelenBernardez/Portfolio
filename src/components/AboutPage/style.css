@@ -14,11 +14,42 @@
   line-height: 1.5;
   margin-left: 10%;
   margin-right: 30%;
-  padding: 3rem;
+  padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 35px;
+  border-bottom-right-radius: 0px;
   background-color: var(--white);
   box-shadow: 10px 10px 0 0 #182739, 0 0 0 5px #182739;
+  position: relative;
+}
+
+/* .about-bubble:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #ff0808;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #ff0000;
+  border-bottom: 20px solid transparent;
+  right: 5%;
+  bottom: -24px;
+
+  transform: scaleX(-1); } */
+
+.about-bubble {
+  width: 8rem;
+  right: -6.5px;
+  position: absolute;
+  top: 96%;
+  transform: scale(0.9);
+}
+
+.about-bubble-border {
+  width: 8rem;
+  right: -10px;
+  position: absolute;
+  top: 100%;
 }
 
 .contact-box {
