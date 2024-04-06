@@ -8,9 +8,19 @@ import Loading from "../details/Loading";
 function HomePage() {
   const { t } = useTranslation();
 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadingTimeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 400);
+
+    return () => clearTimeout(loadingTimeout);
+  }, []);
+
   return (
     <main className="home">
-      <Loading />
+      {isLoading && <Loading />}
       <div className="profile">
         <h1>Ana Belén Bernárdez Martínez</h1>
         <h2>{t("translation.position")}</h2>

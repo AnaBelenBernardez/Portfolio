@@ -23,9 +23,19 @@ function AboutPage() {
     };
   }, []);
 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadingTimeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 400);
+
+    return () => clearTimeout(loadingTimeout);
+  }, []);
+
   return (
     <main className="aboutMain">
-      <Loading />
+      {isLoading && <Loading />}
       <ScrollToTop />
       <div className="about">
         <p className="textAbout">{t("translation.about")}</p>

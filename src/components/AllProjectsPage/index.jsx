@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import Projects from "./Projects";
 import ScrollToTop from "../details/ScrollToTop";
@@ -10,9 +10,19 @@ import Loading from "../details/Loading";
 function AllProjectsPage() {
   const { t } = useTranslation();
 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadingTimeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 400);
+
+    return () => clearTimeout(loadingTimeout);
+  }, []);
+
   return (
     <main className="all-projects">
-      <Loading />
+      {isLoading && <Loading />}
       <Skills />
       <Projects />
       <SideNav />
