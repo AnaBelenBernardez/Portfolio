@@ -12,7 +12,7 @@ function AboutPage() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 882);
+      setIsMobile(window.innerWidth <= 1400);
     };
 
     window.addEventListener("resize", handleResize);

@@ -28,6 +28,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  user-select: none;
 }
 
 .mirror::after {
@@ -59,6 +60,10 @@
   left: 73%;
   top: 52%;
   width: 12%;
+  font-family: Soria;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: var(--shadow);
 }
 
 #capi {
@@ -66,6 +71,10 @@
   left: 41%;
   top: 52%;
   width: 12%;
+  font-family: Soria;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: var(--shadow);
 }
 
 #hobbies {

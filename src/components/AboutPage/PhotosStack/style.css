@@ -16,8 +16,8 @@
   height: 20rem;
   position: relative;
   list-style-type: none;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
 }
 
 .polaroid > img {
@@ -123,14 +123,6 @@
   cursor: pointer;
 }
 
-#drogo-stack {
-  height: 17rem;
-}
-
-#me-stack {
-  height: 18rem;
-}
-
 #team-stack {
   margin-left: -25px;
   margin-right: -25px;
@@ -145,6 +137,30 @@
   padding-right: 25px;
 }
 
+#drogo-stack {
+  height: 30rem;
+}
+
+#me-stack {
+  height: 30rem;
+}
+
 #capi-stack {
-  height: 18rem;
+  height: 30rem;
+}
+
+@media (max-width: 883px) {
+  #capi-stack {
+    height: 18rem;
+  }
+  #me-stack {
+    height: 18rem;
+  }
+  #drogo-stack {
+    height: 17rem;
+  }
+  .cards {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
 }
