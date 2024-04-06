@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import { useTranslation } from "react-i18next";
 import Loading from "../details/Loading";
+import SpaceInvaders from "./SpaceInvaders";
 
 function NotFoundPage() {
   const { t } = useTranslation();
@@ -20,6 +21,7 @@ function NotFoundPage() {
     <main className="NotFoundPage">
       {isLoading && <Loading />}
       <div>
+        {/* <SpaceInvaders /> */}
         <h1>404</h1>
         <h2>Page not found</h2>
         <div>
