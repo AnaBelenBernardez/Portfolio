@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 
 const Loading = () => {
+  const [showLoading, setShowLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="loading-container">
-      <div className="lds-heart">
-        <div></div>
-      </div>
-    </div>
+    <>
+      {showLoading && (
+        <>
+          <div className="overlay">
+            <div class="loader">✧˖°.✦˳˖</div>
+          </div>
+        </>
+      )}
+    </>
   );
 };
 

@@ -5,6 +5,7 @@ import Contact from "../Contact";
 import PhotosAbout from "./PhotosAbout";
 import PhotosStack from "./PhotosStack";
 import ScrollToTop from "../details/ScrollToTop";
+import Loading from "../details/Loading";
 
 function AboutPage() {
   const { t } = useTranslation();
@@ -24,6 +25,7 @@ function AboutPage() {
 
   return (
     <main className="aboutMain">
+      <Loading />
       <ScrollToTop />
       <div className="about">
         <p className="textAbout">{t("translation.about")}</p>
