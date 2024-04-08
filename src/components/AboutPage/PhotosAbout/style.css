@@ -84,6 +84,18 @@
   width: 30%;
 }
 
+.hover-img {
+  display: none;
+  position: absolute;
+  top: 8px;
+  left: 0.9rem;
+}
+
+#capi :hover .hover-img {
+  display: block;
+  width: 85%;
+}
+
 .item {
   width: 40%;
   filter: grayscale(100%);

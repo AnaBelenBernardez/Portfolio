@@ -32,6 +32,7 @@ function PhotosAbout() {
       <div id="capi" className="item">
         <div className="polaroid">
           <img loading="lazy" src="\assets\Capi.jpg" />
+          <img className="hover-img" loading="lazy" src="\assets\capi.gif" />
           <div className="caption">Capi 🧡</div>
         </div>
       </div>
