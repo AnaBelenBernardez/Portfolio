@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 function PhotosAbout() {
+  const [isHovered, setIsHovered] = useState(false);
+  const [audio, setAudio] = useState(null);
+
+  const playSniffSound = () => {
+    const audio = new Audio("./assets/sniff.mp3");
+    audio.play();
+    setAudio(audio);
+  };
+
+  const stopSniffSound = () => {
+    if (audio) {
+      audio.pause();
+      audio.currentTime = 0;
+      setAudio(null);
+    }
+  };
+
   return (
     <div className="photosAbout">
       <div id="thats-me" className="item">
@@ -23,9 +40,24 @@ function PhotosAbout() {
         </div>
       </div>
 
-      <div id="drogo" className="item">
+      <div
+        id="drogo"
+        className="item"
+        onMouseEnter={() => {
+          setIsHovered(true);
+          playSniffSound();
+        }}
+        onMouseLeave={() => {
+          setIsHovered(false);
+          stopSniffSound();
+        }}
+      >
         <div className="polaroid">
-          <img loading="lazy" src="\assets\Drogo.png" />
+          {isHovered ? (
+            <img loading="lazy" src="\assets\Drogo.gif" />
+          ) : (
+            <img loading="lazy" src="\assets\Drogo.png" />
+          )}
           <div className="caption">Drogo 🖤</div>
         </div>
       </div>

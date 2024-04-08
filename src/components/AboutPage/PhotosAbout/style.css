@@ -91,7 +91,7 @@
   left: 0.9rem;
 }
 
-#capi :hover .hover-img {
+#capi:hover .hover-img {
   display: block;
   width: 85%;
 }
