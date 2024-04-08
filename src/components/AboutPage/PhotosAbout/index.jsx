@@ -4,6 +4,7 @@ import "./style.css";
 function PhotosAbout() {
   const [isHovered, setIsHovered] = useState(false);
   const [audio, setAudio] = useState(null);
+  const [isHoveredTeam, setIsHoveredTeam] = useState(false);
 
   const playSniffSound = () => {
     const audio = new Audio("./assets/sniff.mp3");
@@ -27,9 +28,22 @@ function PhotosAbout() {
           <div className="caption mirror">✌😁</div>
         </div>
       </div>
-      <div id="teamwork" className="item">
+      <div
+        id="teamwork"
+        className="item"
+        onMouseEnter={() => {
+          setIsHoveredTeam(true);
+        }}
+        onMouseLeave={() => {
+          setIsHoveredTeam(false);
+        }}
+      >
         <div className="polaroid">
-          <img loading="lazy" src="\assets\team.jpeg" />
+          {isHoveredTeam ? (
+            <img loading="lazy" src="\assets\team.gif" />
+          ) : (
+            <img loading="lazy" src="\assets\team.jpeg" />
+          )}
           <div className="caption">-`♡´-</div>
         </div>
       </div>
