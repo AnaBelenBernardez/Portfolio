@@ -25,6 +25,9 @@
     "othersSection": "Otras",
     "project1About": "Juego que permite utilizar el ratón o el teclado para simular los sonidos de una batería.",
     "project2About": "Web donde las personas que necesitan un servicio digital pueden pedir ayuda a otros usuarios. Por ejemplo: traducir un texto, editar una foto, revisar un documento, etc. Solo necesidades que se puedan realizar a través de un archivo digital.",
-    "project3About": "Por supuesto, este portfolio."
+    "project3About": "Por supuesto, este portfolio.",
+    "pageNotFound": "Página no encontrada",
+    "SpaceInvaders": "JUGAR A SPACE INVADERS",
+    "GoBack": "INICIO"
   }
 }

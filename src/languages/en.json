@@ -25,6 +25,9 @@
     "othersSection": "Others",
     "project1About": "Game that allows using the mouse or the keyboard to simulate the sounds of a drum set.",
     "project2About": "Web where people who need a digital service can ask other users for help. For example: translate a text, edit a photo, review a document, etc. Only needs that can be made through a digital file.",
-    "project3About": "Of course, this portfolio."
+    "project3About": "Of course, this portfolio.",
+    "pageNotFound": "Page not found",
+    "SpaceInvaders": "PLAY SPACE INVADERS",
+    "GoBack": "GO BACK"
   }
 }

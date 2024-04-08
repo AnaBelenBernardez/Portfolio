@@ -19,6 +19,22 @@
   display: inline-block;
 }
 
+.space-button {
+  margin-bottom: -3rem !important;
+}
+
+.buttons-404 {
+  position: relative;
+}
+
+#space-star {
+  position: absolute;
+  top: 2.3rem;
+  right: -3rem;
+  width: 7rem;
+  z-index: -1;
+}
+
 .NotFoundPage a {
   display: flex;
   justify-content: center;

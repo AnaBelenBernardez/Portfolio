@@ -25,6 +25,9 @@
     "othersSection": "Outras",
     "project1About": "Xogo que permite usar o rato ou o teclado para simular os sons dunha batería.",
     "project2About": "Web onde as persoas que necesiten un servizo dixital poden pedir axuda a outros usuarios. Por exemplo: traducir un texto, editar unha foto, revisar un documento, etc. Só necesidades que se poden facer a través dun arquivo dixital.",
-    "project3About": "Por suposto, este portfolio."
+    "project3About": "Por suposto, este portfolio.",
+    "pageNotFound": "Non se atopou a páxina",
+    "SpaceInvaders": "XOGAR A SPACE INVADERS",
+    "GoBack": "INICIO"
   }
 }

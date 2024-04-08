@@ -9,7 +9,7 @@ import ProjectPage from "./components/ProjectPage";
 import NotFoundPage from "./components/NotFoundPage";
 import Header from "./components/Header";
 import PageTitle from "./components/details/PageTitle";
-import ScrollBar from "./components/details/ScrollBar";
+import SpaceInvaders from "./components/NotFoundPage/SpaceInvaders";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<AllProjectsPage />} />
         <Route path="/project/:id" element={<ProjectPage />} />
+        <Route path="space-invaders" element={<SpaceInvaders />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />

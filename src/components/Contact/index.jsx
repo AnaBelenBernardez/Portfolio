@@ -25,8 +25,6 @@ function Contact() {
     ]);
   }, [i18n.language, t]);
 
-  const [starIndex, setStarIndex] = useState(0);
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentPhraseIndex((prevIndex) =>
@@ -36,6 +34,8 @@ function Contact() {
 
     return () => clearInterval(interval);
   }, [phrases]);
+
+  const [starIndex, setStarIndex] = useState(0);
 
   useEffect(() => {
     const starInterval = setInterval(() => {

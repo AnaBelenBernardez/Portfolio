@@ -3,6 +3,7 @@ import "./style.css";
 
 const SpaceInvaders = () => {
   const [canInteract, setCanInteract] = useState(true);
+  const [gameOver, setGameOver] = useState(false);
 
   useEffect(() => {
     let canvas, screen, gameSize, game;
@@ -73,7 +74,7 @@ const SpaceInvaders = () => {
           this.invaderShots.forEach(function (invaderShots) {
             if (collides(invaderShots, game.player)) {
               game.player.destroy();
-              handlePlayerHit(); // Player is hit by invader's shot
+              handlePlayerHit();
             }
           });
 
@@ -90,31 +91,18 @@ const SpaceInvaders = () => {
       },
 
       draw: function () {
-        if (this.lost && canInteract) {
+        if (game.lost && canInteract) {
+          setCanInteract(false);
+          setGameOver(true);
           screen.fillStyle = "rgba(0, 0, 0, 0.03)";
           screen.fillRect(0, 0, gameSize.width, gameSize.height);
-
           screen.font = "55px Lucida Console";
           screen.textAlign = "center";
           screen.fillStyle = "white";
           screen.fillText("You lost", gameSize.width / 2, gameSize.height / 2);
-          screen.font = "20px Lucida Console";
-          screen.fillText(
-            "Points: " + kills,
-            gameSize.width / 2,
-            gameSize.height / 2 + 30
-          );
-          setCanInteract(false); // Player cannot interact after losing
+          screen.globalZIndex = 999999;
         } else {
           screen.clearRect(0, 0, gameSize.width, gameSize.height);
-
-          screen.font = "10px Lucida Console";
-          screen.textAlign = "right";
-          screen.fillText(
-            "Points: " + kills,
-            gameSize.width,
-            gameSize.height - 12
-          );
         }
 
         screen.beginPath();
@@ -125,7 +113,6 @@ const SpaceInvaders = () => {
           for (i = 0; i < this.invaders.length; i++) this.invaders[i].draw();
         for (i = 0; i < this.invaderShots.length; i++)
           this.invaderShots[i].draw();
-
         screen.fill();
       },
 
@@ -221,18 +208,20 @@ const SpaceInvaders = () => {
           return projectile.active;
         });
 
-        if (!this.active || !canInteract) return; // Check if player can interact
+        if (!this.active || !canInteract) return;
 
         if (
-          this.keyboarder.isDown(this.keyboarder.KEYS.LEFT) &&
-          this.coordinates.x > 0
-        )
-          this.coordinates.x -= 2;
-        else if (
-          this.keyboarder.isDown(this.keyboarder.KEYS.RIGHT) &&
-          this.coordinates.x < gameSize.width - this.size.width
-        )
-          this.coordinates.x += 2;
+          this.keyboarder.isDown(this.keyboarder.KEYS.LEFT) ||
+          this.keyboarder.isDown(this.keyboarder.KEYS.A)
+        ) {
+          if (this.coordinates.x > 0) this.coordinates.x -= 2;
+        } else if (
+          this.keyboarder.isDown(this.keyboarder.KEYS.RIGHT) ||
+          this.keyboarder.isDown(this.keyboarder.KEYS.D)
+        ) {
+          if (this.coordinates.x < gameSize.width - this.size.width)
+            this.coordinates.x += 2;
+        }
 
         if (this.keyboarder.isDown(this.keyboarder.KEYS.Space)) {
           this.shooterHeat += 1;
@@ -309,8 +298,12 @@ const SpaceInvaders = () => {
         LEFT: 37,
         RIGHT: 39,
         Space: 32,
+        W: 87,
+        A: 65,
+        S: 83,
+        D: 68,
       };
-      const keyCode = [37, 39, 32];
+      const keyCode = [37, 39, 32, 87, 65, 83, 68];
       const keyState = {};
 
       let counter;
@@ -397,7 +390,7 @@ const SpaceInvaders = () => {
       initGameStart();
     });
     document.getElementById("restart").addEventListener("click", function () {
-      restartGame(); // Restart button click event
+      restartGame();
     });
 
     function handlePlayerHit() {
@@ -462,20 +455,16 @@ const SpaceInvaders = () => {
 
   return (
     <div className="space-invaders">
-      <p>
-        Space Invaders destroyed this page! Take revenge on them! <br />
-        Use
-        <span className="label label-danger" style={{ margin: "0 5px" }}>
-          Space
-        </span>
-        to shoot and <span className="label label-danger">←</span>&#160;
-        <span className="label label-danger">→</span>&#160;&#160;&#160;
-        <button className="btn btn-default btn-xs" id="restart">
-          Restart
-        </button>
+      <p className="instructions">Use SPACE to shoot </p>
+      <p className="instructions">
+        Use <span>A W S D</span> or <span>← &#160; →&#160;&#160;&#160;</span> to
+        move
       </p>
 
       <canvas id="space-invaders" />
+      <button className="restart-button" id="restart">
+        RESTART
+      </button>
     </div>
   );
 };
