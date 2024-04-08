@@ -25,6 +25,8 @@ function Contact() {
     ]);
   }, [i18n.language, t]);
 
+  const [starIndex, setStarIndex] = useState(0);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentPhraseIndex((prevIndex) =>
@@ -35,9 +37,21 @@ function Contact() {
     return () => clearInterval(interval);
   }, [phrases]);
 
+  useEffect(() => {
+    const starInterval = setInterval(() => {
+      setStarIndex((prevIndex) => (prevIndex === 0 ? 1 : 0));
+    }, 1000);
+
+    return () => clearInterval(starInterval);
+  }, []);
+
   return (
     <div className="contact">
-      <img className="stars" id="contact-star" src="/assets/8starcolor.svg" />
+      {starIndex === 0 ? (
+        <img className="stars" id="contact-star" src="/assets/8starcolor.svg" />
+      ) : (
+        <img className="stars" id="contact-star" src="/assets/8starinv.svg" />
+      )}
       <p>{phrases[currentPhraseIndex]}</p>
       <div className="contact-me">
         <div className="socials">
