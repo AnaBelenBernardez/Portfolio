@@ -39,6 +39,8 @@ function AboutPage() {
       <ScrollToTop />
       <div className="about">
         <p className="textAbout">{t("translation.about")}</p>
+        <img className="stars" id="about-circle1" src="/assets/circle.svg" />
+        <img className="stars" id="about-circle2" src="/assets/circle.svg" />
         <svg
           className="about-bubble-border"
           xmlns="http://www.w3.org/2000/svg"

@@ -49,6 +49,19 @@
   height: 50%;
 }
 
+#about-circle1 {
+  position: absolute;
+  z-index: -1;
+  margin-top: 0.7rem;
+  width: 4rem;
+}
+
+#about-circle2 {
+  position: absolute;
+  top: 10%;
+  right: -5rem;
+}
+
 @media (max-width: 1280px) {
   .contact-box {
     grid-column: 1 / 2;

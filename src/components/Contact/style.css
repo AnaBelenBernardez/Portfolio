@@ -6,6 +6,7 @@
   background-color: var(--white);
   box-shadow: 10px 10px 0 0 #182739, 0 0 0 5px #182739;
   margin-bottom: 1rem;
+  position: relative;
 }
 
 .socials {
@@ -53,6 +54,14 @@
 .contact-me > a:hover {
   color: #182739;
   transition: color 0.5s ease;
+}
+
+#contact-star {
+  position: absolute;
+  top: -3.5rem;
+  right: -4rem;
+  width: 10rem;
+  z-index: -1;
 }
 
 @media (max-width: 600px) {

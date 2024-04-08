@@ -37,6 +37,7 @@ function Contact() {
 
   return (
     <div className="contact">
+      <img className="stars" id="contact-star" src="/assets/8starcolor.svg" />
       <p>{phrases[currentPhraseIndex]}</p>
       <div className="contact-me">
         <div className="socials">
