@@ -28,6 +28,12 @@
     "project3About": "Of course, this portfolio.",
     "pageNotFound": "Page not found",
     "SpaceInvaders": "PLAY SPACE INVADERS",
-    "GoBack": "GO BACK"
+    "GoBack": "GO BACK",
+    "Restart": "RESTART",
+    "use": "Use",
+    "space": "SPACE",
+    "toJump": "to jump",
+    "toMove": "to move",
+    "or": "or"
   }
 }

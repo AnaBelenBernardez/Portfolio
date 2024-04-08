@@ -28,6 +28,12 @@
     "project3About": "Por suposto, este portfolio.",
     "pageNotFound": "Non se atopou a páxina",
     "SpaceInvaders": "XOGAR A SPACE INVADERS",
-    "GoBack": "INICIO"
+    "GoBack": "INICIO",
+    "Restart": "REINICIAR",
+    "use": "Usa",
+    "space": "ESPAZO",
+    "toJump": "para saltar",
+    "toMove": "para moverte",
+    "or": "ou"
   }
 }

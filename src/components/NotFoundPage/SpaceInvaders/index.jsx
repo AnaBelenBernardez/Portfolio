@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./style.css";
 
 const SpaceInvaders = () => {
+  const { t } = useTranslation();
   const [canInteract, setCanInteract] = useState(true);
   const [gameOver, setGameOver] = useState(false);
 
@@ -99,7 +101,11 @@ const SpaceInvaders = () => {
           screen.font = "55px Lucida Console";
           screen.textAlign = "center";
           screen.fillStyle = "white";
-          screen.fillText("You lost", gameSize.width / 2, gameSize.height / 2);
+          screen.fillText(
+            "(⁠╥⁠﹏⁠╥⁠)",
+            gameSize.width / 2,
+            gameSize.height / 2
+          );
           screen.globalZIndex = 999999;
         } else {
           screen.clearRect(0, 0, gameSize.width, gameSize.height);
@@ -455,15 +461,20 @@ const SpaceInvaders = () => {
 
   return (
     <div className="space-invaders">
-      <p className="instructions">Use SPACE to shoot </p>
       <p className="instructions">
-        Use <span>A W S D</span> or <span>← &#160; →&#160;&#160;&#160;</span> to
-        move
+        {t("translation.use")} <span> {t("translation.space")} </span>
+        {t("translation.toJump")}
       </p>
-
+      <p className="instructions">
+        {t("translation.use")}
+        <span> A W S D </span>
+        {t("translation.or")}
+        <span> ← &#160; →&#160;&#160;&#160;</span>
+        {t("translation.toMove")}
+      </p>
       <canvas id="space-invaders" />
       <button className="restart-button" id="restart">
-        RESTART
+        {t("translation.Restart")}
       </button>
     </div>
   );
