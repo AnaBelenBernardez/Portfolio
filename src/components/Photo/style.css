@@ -47,4 +47,16 @@
     height: 15rem;
     border-width: 10px;
   }
+  .photo-left {
+    left: -1.7rem;
+  }
+
+  #photo-star {
+    width: 3rem;
+  }
+
+  #photo-right {
+    right: -1rem;
+    width: 5rem;
+  }
 }
