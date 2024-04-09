@@ -70,7 +70,11 @@ function Contact() {
             <i className="devicon-linkedin-plain"></i>
           </a>
         </div>
-        <a href="mailto:anabelenbernardez@gmail.com" title="Send e-mail to Ana">
+        <a
+          id="contact-me-text"
+          href="mailto:anabelenbernardez@gmail.com"
+          title="Send e-mail to Ana"
+        >
           {t("translation.contactMe")}
         </a>
       </div>

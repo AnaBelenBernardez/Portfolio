@@ -88,10 +88,6 @@
     padding-top: 8px;
   }
 
-  .contact-me > a {
-    font-size: 34px;
-  }
-
   .contact-me {
     position: absolute;
     bottom: 1px;
@@ -100,6 +96,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  #contact-me-text {
+    font-size: 34px;
+    width: 10rem;
   }
 
   .contact-me > * {
