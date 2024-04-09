@@ -56,3 +56,9 @@
   color: var(--orange);
   scale: 1.1;
 }
+
+@media (max-width: 600px) {
+  .space-invaders-link {
+    display: none !important;
+  }
+}

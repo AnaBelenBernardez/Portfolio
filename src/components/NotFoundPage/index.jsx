@@ -43,7 +43,10 @@ function NotFoundPage() {
           ) : (
             <img className="stars" id="space-star" src="/assets/8starinv.svg" />
           )}
-          <Link to="/space-invaders" className="space-button">
+          <Link
+            to="/space-invaders"
+            className="space-button space-invaders-link"
+          >
             {t("translation.SpaceInvaders")}
           </Link>
           <a href="/"> {t("translation.GoBack")}</a>
