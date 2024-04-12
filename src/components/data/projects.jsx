@@ -32,6 +32,7 @@ export const ProjectData = [
       "Game that allows using the mouse or the keyboard to simulate the sounds of a drum set.",
     demo: "https://badum-tss.vercel.app/",
     github: "https://github.com/AnaBelenBernardez/BateriaJS",
+    youtube: "https://youtu.be/ziQYQplqab8?si=lweeBhCOUsBSEabr",
     image:
       "https://raw.githubusercontent.com/AnaBelenBernardez/BateriaJS/main/extras/badum-tss.png",
   },
@@ -41,6 +42,7 @@ export const ProjectData = [
     about: "Compilation of my favorite games",
     demo: "https://game-stash.vercel.app/",
     github: "https://github.com/AnaBelenBernardez/game_stash",
+
     image:
       "https://raw.githubusercontent.com/AnaBelenBernardez/game_stash/main/public/GS0.png",
   },

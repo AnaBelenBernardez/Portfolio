@@ -92,6 +92,37 @@ function Projects() {
                   </div>
                 </a>
               )}
+              {project.youtube && (
+                <a
+                  className="project-link"
+                  href={project.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="link-button">
+                    <svg
+                      id="demo-project"
+                      width="15"
+                      height="15"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xml:space="preserve"
+                      version="1.1"
+                      viewBox="0 0 461 326"
+                    >
+                      <g>
+                        <g id="svg_1">
+                          <path
+                            id="svg_2"
+                            fill="var(--shadow)"
+                            d="m365.257,0l-269.513,0c-52.878,0 -95.744,42.866 -95.744,95.744l0,134.728c0,52.878 42.866,95.744 95.744,95.744l269.513,0c52.878,0 95.744,-42.866 95.744,-95.744l0,-134.728c0,-52.878 -42.866,-95.744 -95.744,-95.744zm-64.751,169.663l-126.06,60.123c-3.359,1.602 -7.239,-0.847 -7.239,-4.568l0,-124.004c0,-3.774 3.982,-6.22 7.348,-4.514l126.06,63.881c3.748,1.899 3.683,7.274 -0.109,9.082z"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                    YouTube
+                  </div>
+                </a>
+              )}
             </div>
           </div>
           // </Link>
