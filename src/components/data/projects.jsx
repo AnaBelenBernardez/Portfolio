@@ -42,7 +42,7 @@ export const ProjectData = [
     about: "Compilation of my favorite games",
     demo: "https://game-stash.vercel.app/",
     github: "https://github.com/AnaBelenBernardez/game_stash",
-
+    youtube: "https://youtu.be/u7lEEm4qMUM?si=3zYoB26fY1Wi8ljq",
     image:
       "https://raw.githubusercontent.com/AnaBelenBernardez/game_stash/main/public/GS0.png",
   },
