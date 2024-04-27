@@ -13,6 +13,7 @@ export const ProjectData = [
     about:
       "Web where people who need a digital service can ask other users for help. For example: translate a text, edit a photo, review a document, etc. Only needs that can be made through a digital file.",
     github: "https://github.com/AnaBelenBernardez/SkillVerse",
+    youtube: "https://youtu.be/r5ly_KYB4Ek?si=jxRMc_iG__BOr5FZ",
     image:
       "https://raw.githubusercontent.com/AnaBelenBernardez/SkillVerse/main/Frontend/public/images/HomeSkillverse.gif",
   },
@@ -21,6 +22,7 @@ export const ProjectData = [
     title: "AECC A Coruña",
     about:
       "Página web donde consultar eventos deportivos organizados por La Asociación Española Contra el Cáncer (AECC) de A Coruña.",
+    demo: "https://corunaenmarchacontraocancro.com/",
     github: "https://github.com/AnaBelenBernardez/aecc",
     image:
       "https://raw.githubusercontent.com/AnaBelenBernardez/aecc/main/docs/assets/mockup.png",
