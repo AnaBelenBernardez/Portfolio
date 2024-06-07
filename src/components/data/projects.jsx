@@ -1,12 +1,22 @@
 export const ProjectData = [
   {
-    index: 4,
+    index: 6,
+    title: "Científicas que nos inspiran",
+    about: "Mujeres científicas que nos inspiran",
+    demo: "https://www.cientificasqueinspiran.es/",
+    github: "https://github.com/AnaBelenBernardez/ingenyus",
+    image:
+      "https://raw.githubusercontent.com/anabelenbernardez/ingenyus/main/src/assets/cientificas.png",
+  },
+  {
+    index: 3,
     title: "MeeMee",
     about: "MeeMee it's a platform to connect people with similar interests.",
     github: "https://github.com/AnaBelenBernardez/MeeMee",
     image:
       "https://raw.githubusercontent.com/AnaBelenBernardez/MeeMee/main/assets/MeeMee.png",
   },
+
   {
     index: 2,
     title: "SkillVerse",
@@ -39,7 +49,7 @@ export const ProjectData = [
       "https://raw.githubusercontent.com/AnaBelenBernardez/BateriaJS/main/extras/badum-tss.png",
   },
   {
-    index: 6,
+    index: 4,
     title: "My Videogame Stash",
     about: "Compilation of my favorite games",
     demo: "https://game-stash.vercel.app/",

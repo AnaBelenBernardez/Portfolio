@@ -13,7 +13,7 @@ function Projects() {
       <div className="projects-section">
         {data.map((project, index) => (
           // <Link to={`/project/${project.index}`} key={index}>
-          <div className={`project-card project-${index + 1}`}>
+          <div className={`project-card project-${index}`}>
             <div className="project-top-line">
               <p>{project.title}</p>
             </div>
@@ -21,7 +21,7 @@ function Projects() {
               loading="lazy"
               src={project.image}
               alt={project.title}
-              className={`project-photo project-${index + 1}`}
+              className={`project-photo project-${index}`}
             />
 
             <div className="project-links">
