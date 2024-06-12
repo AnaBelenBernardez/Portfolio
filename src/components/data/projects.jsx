@@ -1,5 +1,12 @@
 export const ProjectData = [
   {
+    index: 7,
+    title: "FIGMA",
+    about: "Mis diseños en FIGMA",
+    demo: "https://www.figma.com/files/project/232238353",
+    image: "assets/photos/figma.png",
+  },
+  {
     index: 6,
     title: "Científicas que nos inspiran",
     about: "Mujeres científicas que nos inspiran",
