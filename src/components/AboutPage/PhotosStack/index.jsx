@@ -70,6 +70,14 @@ function PhotosStack() {
         <li className="card ">
           <div className="stack">
             <div className="polaroid">
+              <img id="astro-stack" loading="lazy" src="\assets\Astro.jpg" />
+              <div className="caption">Astro 🧡</div>
+            </div>
+          </div>
+        </li>
+        <li className="card ">
+          <div className="stack">
+            <div className="polaroid">
               <img id="drogo-stack" loading="lazy" src="\assets\Drogo600.png" />
               <div className="caption">Drogo 🖤</div>
             </div>

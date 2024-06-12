@@ -60,7 +60,7 @@
   left: 73%;
   top: 52%;
   width: 12%;
-  font-family: Soria;
+  font-family: Soria, serif;
   letter-spacing: 2px;
   font-weight: bold;
   color: var(--shadow);
@@ -68,10 +68,10 @@
 
 #capi {
   position: absolute;
-  left: 41%;
+  left: 83%;
   top: 52%;
   width: 12%;
-  font-family: Soria;
+  font-family: Soria, serif;
   letter-spacing: 2px;
   font-weight: bold;
   color: var(--shadow);
@@ -82,6 +82,15 @@
   left: 48%;
   top: 30%;
   width: 30%;
+}
+
+#astro {
+  position: absolute;
+  left: 41%;
+  top: 50%;
+  width: 15%;
+  font-family: Soria, serif;
+  letter-spacing: 2px;
 }
 
 .hover-img {

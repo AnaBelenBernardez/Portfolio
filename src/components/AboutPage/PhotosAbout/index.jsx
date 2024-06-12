@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./style.css";
 
 function PhotosAbout() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHoveredDrogo, setIsHoveredDrogo] = useState(false);
   const [audio, setAudio] = useState(null);
   const [isHoveredTeam, setIsHoveredTeam] = useState(false);
+  const [isHoveredAstro, setIsHoveredAstro] = useState(false);
 
   const playSniffSound = () => {
     const audio = new Audio("./assets/sniff.mp3");
@@ -24,7 +25,7 @@ function PhotosAbout() {
     <div className="photosAbout">
       <div id="thats-me" className="item">
         <div className="polaroid">
-          <img loading="lazy" src="\assets\yep_thats_me.jpg" />
+          <img alt="me" loading="lazy" src="\assets\yep_thats_me.jpg" />
           <div className="caption mirror">✌😁</div>
         </div>
       </div>
@@ -40,16 +41,16 @@ function PhotosAbout() {
       >
         <div className="polaroid">
           {isHoveredTeam ? (
-            <img loading="lazy" src="\assets\team.gif" />
+            <img alt="teamwork" loading="lazy" src="\assets\team.gif" />
           ) : (
-            <img loading="lazy" src="\assets\team.jpeg" />
+            <img alt="teamwork" loading="lazy" src="\assets\team.jpeg" />
           )}
           <div className="caption">-`♡´-</div>
         </div>
       </div>
       <div id="hobbies" className="item">
         <div className="polaroid">
-          <img loading="lazy" src="\assets\hobbies.jpg" />
+          <img alt="hobbies" loading="lazy" src="\assets\hobbies.jpg" />
           <div className="caption">🌱🎮🎲🍜📚</div>
         </div>
       </div>
@@ -58,28 +59,52 @@ function PhotosAbout() {
         id="drogo"
         className="item"
         onMouseEnter={() => {
-          setIsHovered(true);
+          setIsHoveredDrogo(true);
           playSniffSound();
         }}
         onMouseLeave={() => {
-          setIsHovered(false);
+          setIsHoveredDrogo(false);
           stopSniffSound();
         }}
       >
         <div className="polaroid">
-          {isHovered ? (
-            <img loading="lazy" src="\assets\Drogo.gif" />
+          {isHoveredDrogo ? (
+            <img alt="drogo" loading="lazy" src="\assets\Drogo.gif" />
           ) : (
-            <img loading="lazy" src="\assets\Drogo.png" />
+            <img alt="drogo" loading="lazy" src="\assets\Drogo.png" />
           )}
           <div className="caption">Drogo 🖤</div>
         </div>
       </div>
       <div id="capi" className="item">
         <div className="polaroid">
-          <img loading="lazy" src="\assets\Capi.jpg" />
-          <img className="hover-img" loading="lazy" src="\assets\capi.gif" />
+          <img alt="capi" loading="lazy" src="\assets\Capi.jpg" />
+          <img
+            alt="capi"
+            className="hover-img"
+            loading="lazy"
+            src="\assets\capi.gif"
+          />
           <div className="caption">Capi 🧡</div>
+        </div>
+      </div>
+      <div
+        id="astro"
+        className="item"
+        onMouseEnter={() => {
+          setIsHoveredAstro(true);
+        }}
+        onMouseLeave={() => {
+          setIsHoveredAstro(false);
+        }}
+      >
+        <div className="polaroid">
+          {isHoveredAstro ? (
+            <img alt="astro" loading="lazy" src="\assets\Astronauta.png" />
+          ) : (
+            <img alt="astro" loading="lazy" src="\assets\Astro.jpg" />
+          )}
+          <div className="caption">Astro 🪐</div>
         </div>
       </div>
     </div>

@@ -27,6 +27,9 @@
   object-fit: cover;
 }
 
+.caption {
+  letter-spacing: 2px;
+}
 .stack .polaroid:before {
   content: "";
   position: absolute;
