@@ -6,6 +6,7 @@ function PhotosAbout() {
   const [audio, setAudio] = useState(null);
   const [isHoveredTeam, setIsHoveredTeam] = useState(false);
   const [isHoveredAstro, setIsHoveredAstro] = useState(false);
+  const [isHoveredCosmo, setIsHoveredCosmo] = useState(false);
 
   const playSniffSound = () => {
     const audio = new Audio("./assets/sniff.mp3");
@@ -105,6 +106,25 @@ function PhotosAbout() {
             <img alt="astro" loading="lazy" src="\assets\Astro.jpg" />
           )}
           <div className="caption">Astro 🪐</div>
+        </div>
+      </div>
+      <div
+        id="cosmo"
+        className="item"
+        onMouseEnter={() => {
+          setIsHoveredCosmo(true);
+        }}
+        onMouseLeave={() => {
+          setIsHoveredCosmo(false);
+        }}
+      >
+        <div className="polaroid">
+          {isHoveredCosmo ? (
+            <img alt="cosmo" loading="lazy" src="\assets\Cosmonauta.png" />
+          ) : (
+            <img alt="cosmo" loading="lazy" src="\assets\Cosmo.png" />
+          )}
+          <div className="caption">Cosmo 💫</div>
         </div>
       </div>
     </div>

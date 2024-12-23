@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./style.css";
 
 function PhotosStack() {
@@ -71,7 +71,15 @@ function PhotosStack() {
           <div className="stack">
             <div className="polaroid">
               <img id="astro-stack" loading="lazy" src="\assets\Astro.jpg" />
-              <div className="caption">Astro 🧡</div>
+              <div className="caption">Astro 🪐</div>
+            </div>
+          </div>
+        </li>
+        <li className="card ">
+          <div className="stack">
+            <div className="polaroid">
+              <img id="cosmo-stack" loading="lazy" src="\assets\Cosmo.png" />
+              <div className="caption">Cosmo 💫</div>
             </div>
           </div>
         </li>

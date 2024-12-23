@@ -140,16 +140,15 @@
   padding-right: 25px;
 }
 
-#drogo-stack {
-  height: 30rem;
-}
-
+#drogo-stack,
+#capi-stack,
 #me-stack {
   height: 30rem;
 }
 
-#capi-stack {
-  height: 30rem;
+#astro-stack,
+#cosmo-stack {
+  height: 20rem;
 }
 
 @media (max-width: 883px) {
