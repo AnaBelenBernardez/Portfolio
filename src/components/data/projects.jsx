@@ -1,6 +1,15 @@
 export const ProjectData = [
   {
+    index: 8,
+    styleIndex: 7,
+    title: "INTERSECCIÓN",
+    about: "Festival Internacional de Cine de A Coruña",
+    demo: "https://interseccion.gal/",
+    image: "assets/photos/interseccion.png",
+  },
+  {
     index: 7,
+    styleIndex: 0,
     title: "FIGMA",
     about: "Mis diseños en FIGMA",
     demo: "https://www.figma.com/files/project/232238353",
@@ -8,6 +17,7 @@ export const ProjectData = [
   },
   {
     index: 6,
+    styleIndex: 1,
     title: "Científicas que nos inspiran",
     about: "Mujeres científicas que nos inspiran",
     demo: "https://www.cientificasqueinspiran.es/",
@@ -17,6 +27,7 @@ export const ProjectData = [
   },
   {
     index: 3,
+    styleIndex: 2,
     title: "MeeMee",
     about: "MeeMee it's a platform to connect people with similar interests.",
     github: "https://github.com/AnaBelenBernardez/MeeMee",
@@ -26,6 +37,7 @@ export const ProjectData = [
 
   {
     index: 2,
+    styleIndex: 3,
     title: "SkillVerse",
     about:
       "Web where people who need a digital service can ask other users for help. For example: translate a text, edit a photo, review a document, etc. Only needs that can be made through a digital file.",
@@ -36,6 +48,7 @@ export const ProjectData = [
   },
   {
     index: 5,
+    styleIndex: 4,
     title: "AECC A Coruña",
     about:
       "Página web donde consultar eventos deportivos organizados por La Asociación Española Contra el Cáncer (AECC) de A Coruña.",
@@ -46,6 +59,7 @@ export const ProjectData = [
   },
   {
     index: 1,
+    styleIndex: 5,
     title: "BADUM - TSS",
     about:
       "Game that allows using the mouse or the keyboard to simulate the sounds of a drum set.",
@@ -57,6 +71,7 @@ export const ProjectData = [
   },
   {
     index: 4,
+    styleIndex: 6,
     title: "My Videogame Stash",
     about: "Compilation of my favorite games",
     demo: "https://game-stash.vercel.app/",

@@ -11,9 +11,14 @@ function Projects() {
   return (
     <div className="projects">
       <div className="projects-section">
-        {data.map((project, index) => (
-          // <Link to={`/project/${project.index}`} key={index}>
-          <div className={`project-card project-${index}`}>
+        {data.map((project) => (
+          // <Link to={`/project/${project.index}`} key={project.index}>
+          <div
+            className={`project-card project-${
+              project.styleIndex ?? project.index
+            }`}
+            key={project.index}
+          >
             <div className="project-top-line">
               <p>{project.title}</p>
             </div>
@@ -21,7 +26,9 @@ function Projects() {
               loading="lazy"
               src={project.image}
               alt={project.title}
-              className={`project-photo project-${index}`}
+              className={`project-photo project-${
+                project.styleIndex ?? project.index
+              }`}
             />
 
             <div className="project-links">
