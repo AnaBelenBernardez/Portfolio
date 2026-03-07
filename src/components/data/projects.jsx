@@ -8,14 +8,6 @@ export const ProjectData = [
     image: "assets/photos/interseccion.png",
   },
   {
-    index: 7,
-    styleIndex: 0,
-    title: "FIGMA",
-    about: "Mis diseños en FIGMA",
-    demo: "https://www.figma.com/files/project/232238353",
-    image: "assets/photos/figma.png",
-  },
-  {
     index: 6,
     styleIndex: 1,
     title: "Científicas que nos inspiran",
@@ -26,6 +18,23 @@ export const ProjectData = [
       "https://raw.githubusercontent.com/anabelenbernardez/ingenyus/main/src/assets/cientificas.png",
   },
   {
+    index: 9,
+    styleIndex: 8,
+    title: "React Users App",
+    about: "React + TypeScript app for managing users via the ReqRes API.",
+    demo: "https://react-users-app-deploy.vercel.app/",
+    github: "https://github.com/AnaBelenBernardez/react-users-app-deploy",
+    image: "assets/photos/users-app.png",
+  },
+  {
+    index: 7,
+    styleIndex: 0,
+    title: "FIGMA",
+    about: "Mis diseños en FIGMA",
+    demo: "https://www.figma.com/files/project/232238353",
+    image: "assets/photos/figma.png",
+  },
+  {
     index: 3,
     styleIndex: 2,
     title: "MeeMee",
@@ -34,7 +43,6 @@ export const ProjectData = [
     image:
       "https://raw.githubusercontent.com/AnaBelenBernardez/MeeMee/main/assets/MeeMee.png",
   },
-
   {
     index: 2,
     styleIndex: 3,
